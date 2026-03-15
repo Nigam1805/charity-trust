@@ -1,0 +1,9 @@
+# SPA – serve index.html for all routes so refresh works on /about, /gallery, etc.
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200

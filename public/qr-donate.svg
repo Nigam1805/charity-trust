@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="160" viewBox="0 0 160 160" fill="none">
+  <rect width="160" height="160" fill="#f4f8f4" stroke="#2e7d32" stroke-width="2"/>
+  <text x="80" y="75" text-anchor="middle" font-family="system-ui,sans-serif" font-size="14" fill="#2e7d32">UPI QR</text>
+  <text x="80" y="95" text-anchor="middle" font-family="system-ui,sans-serif" font-size="12" fill="#4a4a4a">donate@upi</text>
+  <text x="80" y="115" text-anchor="middle" font-family="system-ui,sans-serif" font-size="10" fill="#6b7280">Place your QR here</text>
+</svg>

@@ -1,0 +1,102 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* =============================================================================
+   CENTRALIZED THEME – Edit this file to rebrand the entire site.
+   Positive palette: hopeful green, warm cream, sunny accent – growth & optimism.
+   ============================================================================= */
+
+:root {
+  /* Primary – hopeful green (growth, renewal, care) – #059669 */
+  --primary: 160 84% 39%;
+  --primary-foreground: 0 0% 100%;
+  --primary-hover: 160 84% 32%;
+  --primary-light: 150 40% 95%;
+
+  /* Secondary – warm cream (optimism, softness) */
+  --secondary: 48 40% 97%;
+  --secondary-foreground: 24 25% 15%;
+
+  /* Accent – sunny gold (warmth, joy, donate CTAs) – #eab308 */
+  --accent: 48 96% 47%;
+  --accent-foreground: 24 25% 15%;
+  --accent-hover: 48 96% 40%;
+
+  /* Background & surface */
+  --background: 60 20% 99%;
+  --foreground: 24 25% 15%;
+
+  /* Muted – warm soft surfaces */
+  --muted: 48 25% 96%;
+
+  /* Text hierarchy – warm tones */
+  --text-secondary: 24 15% 40%;
+  --text-muted: 24 10% 55%;
+
+  /* Border – warm neutral */
+  --border: 40 15% 90%;
+
+  /* Radius – soft rounded corners */
+  --radius: 0.75rem;
+
+  /* Overlay / modal (for lightbox, sheet backdrop) */
+  --backdrop: 0 0% 0% / 0.5;
+  --overlay: 0 0% 0% / 0.8;
+  --overlay-panel: 0 0% 9%;
+  --overlay-panel-text: 0 0% 100%;
+  --overlay-panel-text-muted: 0 0% 83%;
+  --overlay-border: 0 0% 100% / 0.1;
+
+  /* Typography – set in body/headings; fonts loaded via index.html */
+  --font-heading: "Poppins", system-ui, sans-serif;
+  --font-body: "Inter", system-ui, sans-serif;
+
+  /* Shadows – soft, modern */
+  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
+  --shadow-card-hover: 0 10px 15px -3px rgb(0 0 0 / 0.06), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+}
+
+.dark {
+  --primary: 160 84% 45%;
+  --primary-foreground: 0 0% 100%;
+  --background: 24 20% 9%;
+  --foreground: 48 30% 96%;
+  --secondary: 24 20% 14%;
+  --muted: 24 18% 18%;
+  --border: 40 15% 22%;
+}
+
+body {
+  @apply bg-background text-foreground antialiased min-h-screen font-sans;
+}
+
+/* Modern shimmer loading – sleek light sweep */
+@keyframes shimmer-sweep {
+  0% { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+
+.animate-shimmer {
+  background: linear-gradient(
+    105deg,
+    hsl(var(--muted)) 0%,
+    hsl(var(--muted)) 35%,
+    rgba(255, 255, 255, 0.6) 45%,
+    rgba(255, 255, 255, 0.8) 50%,
+    rgba(255, 255, 255, 0.6) 55%,
+    hsl(var(--muted)) 65%,
+    hsl(var(--muted)) 100%
+  );
+  background-size: 200% 100%;
+  animation: shimmer-sweep 2s ease-in-out infinite;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--font-heading);
+}
