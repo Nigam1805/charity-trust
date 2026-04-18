@@ -32,6 +32,7 @@ function GalleryCard({
   item: GalleryItem;
   index: number;
 }) {
+  const gl = siteContent.pages.gallery;
   const itemTyped = item as GalleryItemType;
   const primarySrc = getGalleryImageSrc(itemTyped);
   const [src, setSrc] = useState(primarySrc);
@@ -54,7 +55,7 @@ function GalleryCard({
           to={`/gallery/${item.id}`}
           className="group flex aspect-[4/3] w-full flex-col items-center justify-center rounded-xl border-2 border-border bg-secondary text-text-muted transition-all duration-300 hover:border-primary hover:shadow-lg hover:shadow-primary/10"
         >
-          <span className="text-sm">Image</span>
+          <span className="text-sm">{gl.imagePlaceholder}</span>
         </Link>
       </motion.div>
     );
@@ -89,7 +90,7 @@ function GalleryCard({
               "text-primary-foreground"
             )}
           >
-            <span className="text-sm font-medium">View details</span>
+            <span className="text-sm font-medium">{gl.viewDetails}</span>
             <ArrowRight className="h-5 w-5 transition-transform duration-300 group-hover:translate-x-1" />
           </div>
         </div>

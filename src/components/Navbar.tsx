@@ -11,25 +11,29 @@ import {
 } from "@/components/ui/sheet";
 import { cn } from "@/lib/utils";
 
-const navLinks = [
-  { href: "/", label: "Home" },
-  { href: "/about", label: "About" },
-  { href: "/gallery", label: "Gallery" },
-  { href: "/donate", label: "Donate" },
-  { href: "/contact", label: "Contact" },
-];
-
 export function Navbar() {
   const pathname = useLocation().pathname;
+  const { trustName, siteTitleMarkUrl, nav } = siteContent;
+  const navLinks = nav.links;
 
   return (
     <header className="sticky top-0 z-30 w-full border-b-2 border-primary bg-primary shadow-sm">
       <div className="container mx-auto flex h-16 items-center justify-between px-4">
         <Link
           to="/"
-          className="text-xl font-bold text-primary-foreground transition-opacity hover:opacity-90"
+          className="flex items-center gap-2.5 text-xl font-bold text-primary-foreground transition-opacity hover:opacity-90"
         >
-          {siteContent.trustName}
+          <span className="flex h-10 w-10 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-primary-foreground/35 bg-white p-1 shadow-sm">
+            <img
+              src={siteTitleMarkUrl}
+              alt=""
+              width={40}
+              height={40}
+              className="h-full w-full object-contain object-center"
+              decoding="async"
+            />
+          </span>
+          <span className="leading-tight">{trustName}</span>
         </Link>
 
         <nav className="hidden md:flex md:items-center md:gap-1" aria-label="Main navigation">
@@ -67,7 +71,19 @@ export function Navbar() {
             className="flex w-[280px] flex-col border-l-2 border-primary bg-secondary sm:w-[300px]"
           >
             <SheetHeader className="flex flex-row items-center justify-between space-y-0 border-b border-primary/20 pb-4">
-              <SheetTitle className="text-left text-primary">{siteContent.trustName}</SheetTitle>
+              <SheetTitle className="flex items-center gap-2 text-left text-primary">
+                <span className="flex h-9 w-9 shrink-0 items-center justify-center overflow-hidden rounded-full border-2 border-primary/25 bg-white p-0.5 shadow-sm">
+                  <img
+                    src={siteTitleMarkUrl}
+                    alt=""
+                    width={36}
+                    height={36}
+                    className="h-full w-full object-contain object-center"
+                    decoding="async"
+                  />
+                </span>
+                <span className="font-heading text-base font-semibold">{trustName}</span>
+              </SheetTitle>
               <SheetClose className="rounded-lg p-2 text-text-secondary hover:bg-primary-light hover:text-primary" aria-label="Close menu">
                 <X className="h-5 w-5" />
               </SheetClose>

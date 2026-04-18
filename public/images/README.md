@@ -4,8 +4,9 @@ Place your own photos here to use across the site. The app will prefer these ove
 
 ## Folders
 
-- **services/** – Hospital, school, ashram, community  
-  - `hospital.jpg`, `school.jpg`, `ashram.jpg`, `community.jpg`
+- **services/** – Hospital, school, ashram, community, plus education, old age home, women empowerment, help needy, health  
+  - `hospital.jpg`, `school.jpg`, `ashram.jpg`, `community.jpg`  
+  - `education.jpg`, `old-age-home.jpg`, `women-empowerment.jpg`, `help-needy.jpg`, `health.jpg`
 
 - **gallery/** – Gallery / donation story images (tap any to open detail page)  
   - `1.jpg` … `12.jpg` — use real images from your donation drives, meal distribution, volunteers, and beneficiaries.

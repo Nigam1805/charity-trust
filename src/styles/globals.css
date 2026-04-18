@@ -3,78 +3,116 @@
 @tailwind utilities;
 
 /* =============================================================================
-   CENTRALIZED THEME – Edit this file to rebrand the entire site.
-   Positive palette: hopeful green, warm cream, sunny accent – growth & optimism.
+   CENTRALIZED THEME – Aanand Dhara Charitable Trust (trust-logo.png)
+   Navy #003B73, green #28A745, teal #00A896 — matches emblem & wordmark.
+   Typography: Poppins (headings), Inter (body) via index.html
    ============================================================================= */
 
 :root {
-  /* Primary – hopeful green (growth, renewal, care) – #059669 */
-  --primary: 160 84% 39%;
+  /* Primary – logo navy “AANAND DHARA” / waves / stars #003B73 */
+  --primary: 211 100% 23%;
   --primary-foreground: 0 0% 100%;
-  --primary-hover: 160 84% 32%;
-  --primary-light: 150 40% 95%;
+  --primary-hover: 211 100% 19%;
+  --primary-light: 211 55% 94%;
 
-  /* Secondary – warm cream (optimism, softness) */
-  --secondary: 48 40% 97%;
-  --secondary-foreground: 24 25% 15%;
+  /* Leaf – logo green “CHARITABLE TRUST” / laurel #28A745 */
+  --leaf: 134 61% 41%;
+  --leaf-foreground: 0 0% 100%;
 
-  /* Accent – sunny gold (warmth, joy, donate CTAs) – #eab308 */
-  --accent: 48 96% 47%;
-  --accent-foreground: 24 25% 15%;
-  --accent-hover: 48 96% 40%;
+  /* Secondary – soft surfaces (cool white, navy-tinted) */
+  --secondary: 211 38% 97%;
+  --secondary-foreground: 211 45% 16%;
 
-  /* Background & surface */
-  --background: 60 20% 99%;
-  --foreground: 24 25% 15%;
+  /* Accent – logo teal in hands & droplet #00A896 */
+  --accent: 174 100% 33%;
+  --accent-foreground: 0 0% 100%;
+  --accent-hover: 174 100% 28%;
 
-  /* Muted – warm soft surfaces */
-  --muted: 48 25% 96%;
+  --background: 211 42% 99%;
+  --foreground: 211 45% 16%;
 
-  /* Text hierarchy – warm tones */
-  --text-secondary: 24 15% 40%;
-  --text-muted: 24 10% 55%;
+  --muted: 211 32% 96%;
 
-  /* Border – warm neutral */
-  --border: 40 15% 90%;
+  --text-secondary: 211 28% 36%;
+  --text-muted: 211 18% 46%;
 
-  /* Radius – soft rounded corners */
-  --radius: 0.75rem;
+  --border: 211 22% 88%;
 
-  /* Overlay / modal (for lightbox, sheet backdrop) */
+  --radius: 0.875rem;
+
   --backdrop: 0 0% 0% / 0.5;
-  --overlay: 0 0% 0% / 0.8;
-  --overlay-panel: 0 0% 9%;
-  --overlay-panel-text: 0 0% 100%;
-  --overlay-panel-text-muted: 0 0% 83%;
-  --overlay-border: 0 0% 100% / 0.1;
+  --overlay: 211 100% 12% / 0.88;
+  --overlay-panel: 211 55% 14%;
+  --overlay-panel-text: 210 40% 98%;
+  --overlay-panel-text-muted: 210 25% 75%;
+  --overlay-border: 0 0% 100% / 0.12;
 
-  /* Typography – set in body/headings; fonts loaded via index.html */
   --font-heading: "Poppins", system-ui, sans-serif;
   --font-body: "Inter", system-ui, sans-serif;
 
-  /* Shadows – soft, modern */
-  --shadow-card: 0 1px 3px 0 rgb(0 0 0 / 0.05), 0 1px 2px -1px rgb(0 0 0 / 0.05);
-  --shadow-card-hover: 0 10px 15px -3px rgb(0 0 0 / 0.06), 0 4px 6px -4px rgb(0 0 0 / 0.05);
+  --shadow-card: 0 2px 8px -2px rgb(0 59 115 / 0.09), 0 1px 3px rgb(0 59 115 / 0.05);
+  --shadow-card-hover: 0 12px 24px -8px rgb(0 59 115 / 0.14), 0 4px 8px -4px rgb(0 59 115 / 0.08);
 }
 
 .dark {
-  --primary: 160 84% 45%;
-  --primary-foreground: 0 0% 100%;
-  --background: 24 20% 9%;
-  --foreground: 48 30% 96%;
-  --secondary: 24 20% 14%;
-  --muted: 24 18% 18%;
-  --border: 40 15% 22%;
+  --primary: 211 75% 52%;
+  --primary-foreground: 211 100% 8%;
+  --primary-hover: 211 75% 46%;
+  --primary-light: 211 40% 20%;
+
+  --secondary: 211 28% 16%;
+  --secondary-foreground: 211 35% 96%;
+
+  --accent: 174 85% 42%;
+  --accent-foreground: 211 100% 8%;
+
+  --background: 211 35% 9%;
+  --foreground: 211 30% 96%;
+
+  --muted: 211 26% 16%;
+
+  --text-secondary: 211 18% 72%;
+  --text-muted: 211 12% 55%;
+
+  --border: 211 22% 22%;
 }
 
 body {
   @apply bg-background text-foreground antialiased min-h-screen font-sans;
 }
 
-/* Modern shimmer loading – sleek light sweep */
+/* Hero: logo-aligned wash — green → teal → navy (very light) */
+.bg-hero-gradient {
+  background: linear-gradient(
+    165deg,
+    hsl(134 32% 97.5%) 0%,
+    hsl(174 35% 97%) 45%,
+    hsl(211 45% 98%) 100%
+  );
+}
+
+/* CTA buttons: green → teal → blue */
+.bg-brand-gradient {
+  background: linear-gradient(135deg, hsl(var(--leaf)) 0%, hsl(var(--accent)) 45%, hsl(var(--primary)) 100%);
+}
+
+/* Final band — deep navy gradient (logo wordmark blue) */
+.bg-section-deep {
+  background: linear-gradient(
+    160deg,
+    hsl(var(--primary)) 0%,
+    hsl(211 100% 19%) 52%,
+    hsl(211 100% 15%) 100%
+  );
+}
+
 @keyframes shimmer-sweep {
-  0% { background-position: 200% 0; }
-  100% { background-position: -200% 0; }
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
 }
 
 .animate-shimmer {

@@ -62,7 +62,7 @@ export function ImpactStats({ stats, variant = "default" }: ImpactStatsProps) {
           className={
             isDark
               ? "text-center"
-              : "rounded-lg border border-border bg-muted p-4 text-center"
+              : "rounded-xl border border-border/80 bg-background p-4 text-center shadow-card"
           }
         >
           <p

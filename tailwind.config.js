@@ -6,6 +6,10 @@ export default {
     container: { center: true, padding: "1rem" },
     extend: {
       colors: {
+        leaf: {
+          DEFAULT: "hsl(var(--leaf) / <alpha-value>)",
+          foreground: "hsl(var(--leaf-foreground) / <alpha-value>)",
+        },
         primary: {
           DEFAULT: "hsl(var(--primary) / <alpha-value>)",
           foreground: "hsl(var(--primary-foreground) / <alpha-value>)",

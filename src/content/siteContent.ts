@@ -1,10 +1,15 @@
 /**
- * WEBSITE CONTENT – Edit this file to update all text, details, and media.
- * Single source for the entire Care & Share Trust site.
+ * WEBSITE CONTENT — single source for copy, nav labels, page titles, forms, footer, and media paths.
+ * Sections: trustName, logoUrl / siteTitleMarkUrl (trust-logo.png), tagline, hero, about, services[], gallery[], donation, nav, footerLabels,
+ * homePage, servicesPage, pages.{donate,contact,about,gallery}, mapSection, contactForm, contact.
  */
 
 export const siteContent = {
-  trustName: "Care & Share Trust",
+  trustName: "Aanand Dhara Charitable Trust",
+  /** Trust logo (emblem + wordmark). File in public/. */
+  logoUrl: "/trust-logo.png",
+  /** Same asset in the navbar, shown inside a circular badge. */
+  siteTitleMarkUrl: "/trust-logo.png",
   tagline: "Serving Humanity with Food and Care",
 
   hero: {
@@ -17,7 +22,7 @@ export const siteContent = {
 
   about: {
     intro:
-      "Care & Share Trust is a registered charitable trust dedicated to reducing hunger and malnutrition among the most vulnerable—patients in hospitals, their families, school children, and residents of ashrams and underserved communities. We believe that access to nutritious food is a basic right.",
+      "Aanand Dhara Charitable Trust is a registered charitable trust dedicated to reducing hunger and malnutrition among the most vulnerable—patients in hospitals, their families, school children, and residents of ashrams and underserved communities. We believe that access to nutritious food is a basic right.",
     mission:
       "To provide timely, nutritious meals to those in need—whether in hospitals, schools, ashrams, or local communities—and to support families so they can focus on care and recovery rather than hunger.",
     vision:
@@ -65,12 +70,15 @@ export const siteContent = {
     ],
   },
 
-  /** Service images: use localImage (e.g. /images/services/hospital.jpg) to use your own; else imagePlaceholder (Indian/charity-themed URLs). */
+  /** Service images: use localImage paths under /images/services/; else imagePlaceholder. */
   services: [
     {
       id: "hospital",
       title: "Hospital Food Service",
       description: "Provide nutritious food to patients and their family members.",
+      quote:
+        "The best way to find yourself is to lose yourself in the service of others.",
+      quoteAuthor: "Mahatma Gandhi",
       icon: "Heart",
       localImage: "/images/services/hospital.jpg",
       imagePlaceholder:
@@ -80,6 +88,9 @@ export const siteContent = {
       id: "school",
       title: "School Meal Program",
       description: "Provide meals to children in schools.",
+      quote:
+        "Education is the most powerful weapon which you can use to change the world.",
+      quoteAuthor: "Nelson Mandela",
       icon: "UtensilsCrossed",
       localImage: "/images/services/school.jpg",
       imagePlaceholder:
@@ -89,6 +100,9 @@ export const siteContent = {
       id: "ashram",
       title: "Ashram Support",
       description: "Provide food to elderly and needy people in ashrams.",
+      quote:
+        "A society grows great when old men plant trees whose shade they know they shall never sit in.",
+      quoteAuthor: "Greek proverb",
       icon: "Users",
       localImage: "/images/services/ashram.jpg",
       imagePlaceholder:
@@ -98,10 +112,77 @@ export const siteContent = {
       id: "community",
       title: "Community Food Distribution",
       description: "Food distribution in needy local communities.",
+      quote: "Alone we can do so little; together we can do so much.",
+      quoteAuthor: "Helen Keller",
       icon: "Package",
       localImage: "/images/services/community.jpg",
       imagePlaceholder:
         "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&q=80",
+    },
+    {
+      id: "education",
+      title: "Education",
+      description:
+        "Support for schooling, learning materials, and programmes so children and youth can build a better future.",
+      quote:
+        "Education is not the filling of a pail, but the lighting of a fire.",
+      quoteAuthor: "William Butler Yeats",
+      icon: "GraduationCap",
+      localImage: "/images/services/education.jpg",
+      imagePlaceholder:
+        "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80",
+    },
+    {
+      id: "old-age-home",
+      title: "Old Age Home",
+      description:
+        "Care, companionship, and dignified living for senior citizens who need a safe and supportive home.",
+      quote:
+        "To care for those who once cared for us is one of the highest honours.",
+      quoteAuthor: "Tia Walker",
+      icon: "Home",
+      localImage: "/images/services/old-age-home.jpg",
+      /** Picxy photo 363558 — https://www.picxy.com/photo/363558 */
+      imagePlaceholder:
+        "https://images.picxy.com/cache/2019/10/15/eaed00e1c5d43e74537444690b6b15b4.jpg",
+    },
+    {
+      id: "women-empowerment",
+      title: "Women Empowerment",
+      description:
+        "Skills training, livelihood support, and programmes that help women become confident and self-reliant.",
+      quote: "There is no limit to what we, as women, can accomplish.",
+      quoteAuthor: "Michelle Obama",
+      icon: "HeartHandshake",
+      localImage: "/images/services/women-empowerment.jpg",
+      /** Pexels: Empowered women's cooperative, Bangladesh — https://www.pexels.com/photo/empowered-women-s-cooperative-in-bangladesh-36746074/ */
+      imagePlaceholder:
+        "https://images.pexels.com/photos/36746074/pexels-photo-36746074.jpeg?auto=compress&cs=tinysrgb&w=800",
+    },
+    {
+      id: "help-needy",
+      title: "Help Needy People",
+      description:
+        "Food, essentials, and direct aid for families and individuals facing hardship in our communities.",
+      quote: "We make a living by what we get, but we make a life by what we give.",
+      quoteAuthor: "Winston Churchill",
+      icon: "HandHeart",
+      localImage: "/images/services/help-needy.jpg",
+      imagePlaceholder:
+        "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80",
+    },
+    {
+      id: "health",
+      title: "Health",
+      description:
+        "Health awareness, medical camps, and support so vulnerable people can access care and stay well.",
+      quote:
+        "It is health that is real wealth and not pieces of gold and silver.",
+      quoteAuthor: "Mahatma Gandhi",
+      icon: "Stethoscope",
+      localImage: "/images/services/health.jpg",
+      imagePlaceholder:
+        "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80",
     },
   ],
 
@@ -222,11 +303,123 @@ export const siteContent = {
     instructions:
       "You can support our cause by transferring funds to our bank account or using UPI. Every contribution goes directly toward providing nutritious meals.",
     bankName: "Example Bank",
-    accountName: "Care & Share Trust",
+    accountName: "Aanand Dhara Charitable Trust",
     accountNumber: "1234567890123456",
     ifsc: "EXMP0001234",
-    upiId: "donate@upi",
-    qrCodeImage: "/qr-donate.svg",
+    upiId: "aananddharacharitabl.82206907@hdfcbank",
+    qrCodeImage: "/qr-donate.png",
+    sectionTitle: "Support Our Cause",
+    bankHeading: "Bank Transfer",
+    upiHeading: "UPI",
+    bankFieldLabels: {
+      bankName: "Bank Name",
+      accountName: "Account Name",
+      accountNumber: "Account Number",
+      ifsc: "IFSC Code",
+    },
+    upiIdLabel: "UPI ID:",
+    upiSideTextBeforeId: "Scan with any UPI app to donate. Or use UPI ID:",
+    thankYouFooter:
+      "Thank you for your generosity. Every contribution helps us serve more meals.",
+    qrAlt: "UPI QR Code for donations",
+    qrLoadFailed: "QR code image",
+  },
+
+  /** Main navigation — same labels used in header and footer quick links. */
+  nav: {
+    links: [
+      { href: "/", label: "Home" },
+      { href: "/about", label: "About" },
+      { href: "/gallery", label: "Gallery" },
+      { href: "/donate", label: "Donate" },
+      { href: "/contact", label: "Contact" },
+    ] as const,
+  },
+
+  footerLabels: {
+    quickLinks: "Quick Links",
+    contact: "Contact",
+    supportUs: "Support Us",
+    donateNow: "Donate Now",
+    rightsReserved: "All rights reserved.",
+  },
+
+  homePage: {
+    impactTitle: "Our Impact",
+    impactSubtitle: "Together we are making a difference in the lives of those in need.",
+    galleryTitle: "Gallery",
+    gallerySubtitle: "Glimpses of our work and the communities we serve.",
+    galleryViewAll: "View All",
+    finalCtaTitle: "Join Us in Making a Difference",
+    finalCtaSubtitle:
+      "Your support helps us serve more meals to patients, families, and children in need.",
+    finalCtaDonate: "Donate Now",
+    finalCtaContact: "Contact Us",
+  },
+
+  servicesPage: {
+    title: "Our Services",
+    subtitle:
+      "From hospital and school meals to ashrams and communities—plus education, elder care, women's programmes, aid, and health.",
+  },
+
+  pages: {
+    donate: {
+      title: "Donate",
+      intro:
+        "Your contribution helps us provide nutritious meals to hospital patients, school children, and families in need.",
+    },
+    contact: {
+      title: "Contact Us",
+      intro: "Get in touch for inquiries, partnerships, or to learn how you can help.",
+      infoHeading: "Contact Information",
+    },
+    about: {
+      title: "About Us",
+      peopleTitle: "Our People",
+      peopleSubtitleTemplate: "The trustees and team behind {trustName}.",
+      missionTitle: "Our Mission",
+      visionTitle: "Our Vision",
+      activitiesTitle: "Our Activities",
+      whyWeServeTitle: "Why We Serve",
+      impactNumbersTitle: "Impact in Numbers",
+    },
+    gallery: {
+      title: "Gallery",
+      intro:
+        "Glimpses of our food distribution efforts, volunteers, and the communities we serve.",
+      body:
+        "From hospital meals and school programmes to ashram support and community drives—every image reflects the impact of your donations. Tap any image to read the full story.",
+      gridTitle: "Our work in pictures",
+      galleryCountLine: "{count} moments from the field.",
+      imagePlaceholder: "Image",
+      viewDetails: "View details",
+      notFoundTitle: "Image not found",
+      backToGallery: "Back to Gallery",
+      imageUnavailable: "Image unavailable",
+    },
+  },
+
+  mapSection: {
+    title: "Find Us",
+    loading: "Loading map…",
+    iframeTitle: "Trust location on Google Maps",
+  },
+
+  contactForm: {
+    title: "Send a Message",
+    nameLabel: "Name",
+    namePlaceholder: "Your name",
+    phoneLabel: "Phone",
+    phonePlaceholder: "Your phone number",
+    emailLabel: "Email",
+    emailPlaceholder: "your@email.com",
+    messageLabel: "Message",
+    messagePlaceholder: "Your message",
+    submit: "Send Message",
+    submitting: "Sending…",
+    success: "Thank you. Your message has been sent.",
+    error: "Something went wrong. Please try again or email us directly.",
   },
 
   contact: {

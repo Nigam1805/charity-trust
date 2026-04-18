@@ -3,7 +3,9 @@ import { siteContent } from "@/content/siteContent";
 import { GalleryGrid } from "@/components/GalleryGrid";
 
 export function Gallery() {
-  const gallery = siteContent.gallery;
+  const { gallery, pages } = siteContent;
+  const g = pages.gallery;
+  const countLine = g.galleryCountLine.replace("{count}", String(gallery.length));
 
   return (
     <div className="bg-background">
@@ -15,7 +17,7 @@ export function Gallery() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4 }}
           >
-            Gallery
+            {g.title}
           </motion.h1>
           <motion.p
             className="mt-4 text-lg text-text-secondary md:text-xl"
@@ -23,7 +25,7 @@ export function Gallery() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.08 }}
           >
-            Glimpses of our food distribution efforts, volunteers, and the communities we serve.
+            {g.intro}
           </motion.p>
           <motion.p
             className="mx-auto mt-6 max-w-2xl text-text-secondary"
@@ -31,8 +33,7 @@ export function Gallery() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.4, delay: 0.12 }}
           >
-            From hospital meals and school programmes to ashram support and community drives—every
-            image reflects the impact of your donations. Tap any image to read the full story.
+            {g.body}
           </motion.p>
         </div>
       </section>
@@ -46,7 +47,7 @@ export function Gallery() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.4 }}
           >
-            Our work in pictures
+            {g.gridTitle}
           </motion.h2>
           <motion.p
             className="mx-auto mt-3 max-w-2xl text-center text-text-secondary"
@@ -55,7 +56,7 @@ export function Gallery() {
             viewport={{ once: true, amount: 0.3 }}
             transition={{ duration: 0.4, delay: 0.05 }}
           >
-            {gallery.length} moments from the field.
+            {countLine}
           </motion.p>
           <div className="mt-12">
             <GalleryGrid />

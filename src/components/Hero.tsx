@@ -7,8 +7,16 @@ export function Hero() {
   const { headline, subtext, ctaPrimary, ctaSecondary } = siteContent.hero;
 
   return (
-    <section className="relative overflow-hidden bg-secondary py-16 md:py-24">
-      <div className="container mx-auto px-4 text-center">
+    <section className="relative overflow-hidden bg-hero-gradient py-16 md:py-24">
+      <div
+        className="pointer-events-none absolute -left-24 top-0 h-72 w-72 rounded-full bg-leaf/15 blur-3xl"
+        aria-hidden
+      />
+      <div
+        className="pointer-events-none absolute -right-20 bottom-0 h-80 w-80 rounded-full bg-primary/10 blur-3xl"
+        aria-hidden
+      />
+      <div className="relative z-10 container mx-auto px-4 text-center">
         <motion.h1
           className="font-heading text-4xl font-bold tracking-tight text-foreground md:text-5xl"
           initial={{ opacity: 0, y: 30 }}
@@ -31,7 +39,7 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.25, ease: [0.25, 0.4, 0.25, 1] }}
         >
-          <Button asChild variant="accent" size="lg" className="min-w-[160px]">
+          <Button asChild variant="default" size="lg" className="min-w-[160px]">
             <Link to="/donate">{ctaPrimary}</Link>
           </Button>
           <Button asChild variant="outline" size="lg" className="min-w-[160px]">

@@ -3,8 +3,10 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
+import { siteContent } from "@/content/siteContent";
 
 export function ContactForm() {
+  const f = siteContent.contactForm;
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
 
   async function handleSubmit(e: React.FormEvent<HTMLFormElement>) {
@@ -44,34 +46,34 @@ export function ContactForm() {
 
   return (
     <div>
-      <h2 className="font-heading text-xl font-semibold text-foreground">Send a Message</h2>
+      <h2 className="font-heading text-xl font-semibold text-foreground">{f.title}</h2>
       <form onSubmit={handleSubmit} className="mt-6 space-y-4">
         <div>
-          <Label htmlFor="name">Name</Label>
-          <Input id="name" name="name" type="text" required placeholder="Your name" className="mt-1" />
+          <Label htmlFor="name">{f.nameLabel}</Label>
+          <Input id="name" name="name" type="text" required placeholder={f.namePlaceholder} className="mt-1" />
         </div>
         <div>
-          <Label htmlFor="phone">Phone</Label>
-          <Input id="phone" name="phone" type="tel" placeholder="Your phone number" className="mt-1" />
+          <Label htmlFor="phone">{f.phoneLabel}</Label>
+          <Input id="phone" name="phone" type="tel" placeholder={f.phonePlaceholder} className="mt-1" />
         </div>
         <div>
-          <Label htmlFor="email">Email</Label>
-          <Input id="email" name="email" type="email" required placeholder="your@email.com" className="mt-1" />
+          <Label htmlFor="email">{f.emailLabel}</Label>
+          <Input id="email" name="email" type="email" required placeholder={f.emailPlaceholder} className="mt-1" />
         </div>
         <div>
-          <Label htmlFor="message">Message</Label>
-          <Textarea id="message" name="message" required placeholder="Your message" className="mt-1 min-h-[120px]" />
+          <Label htmlFor="message">{f.messageLabel}</Label>
+          <Textarea id="message" name="message" required placeholder={f.messagePlaceholder} className="mt-1 min-h-[120px]" />
         </div>
         {status === "success" && (
-          <p className="text-sm font-medium text-primary">Thank you. Your message has been sent.</p>
+          <p className="text-sm font-medium text-primary">{f.success}</p>
         )}
         {status === "error" && (
           <p className="text-sm text-text-secondary">
-            Something went wrong. Please try again or email us directly.
+            {f.error}
           </p>
         )}
         <Button type="submit" disabled={status === "loading"}>
-          {status === "loading" ? "Sending…" : "Send Message"}
+          {status === "loading" ? f.submitting : f.submit}
         </Button>
       </form>
     </div>

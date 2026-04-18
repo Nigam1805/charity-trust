@@ -8,7 +8,8 @@ import { Button } from "@/components/ui/button";
 
 export function GalleryDetail() {
   const { id } = useParams<{ id: string }>();
-  const gallery = siteContent.gallery;
+  const { gallery, pages } = siteContent;
+  const g = pages.gallery;
   const item = (id ? gallery.find((i) => i.id === id) : undefined) as GalleryItemType | undefined;
 
   const primarySrc = item ? getGalleryImageSrc(item) : "";
@@ -37,9 +38,9 @@ export function GalleryDetail() {
     return (
       <div className="bg-background py-20 text-center">
         <div className="container mx-auto px-4">
-          <h1 className="font-heading text-2xl font-bold text-foreground">Image not found</h1>
+          <h1 className="font-heading text-2xl font-bold text-foreground">{g.notFoundTitle}</h1>
           <Button asChild variant="outline" className="mt-6">
-            <Link to="/gallery">Back to Gallery</Link>
+            <Link to="/gallery">{g.backToGallery}</Link>
           </Button>
         </div>
       </div>
@@ -59,7 +60,7 @@ export function GalleryDetail() {
           <Button asChild variant="secondary" size="sm" className="mb-6 -ml-2">
             <Link to="/gallery" className="inline-flex items-center gap-2">
               <ArrowLeft className="h-4 w-4" />
-              Back to Gallery
+              {g.backToGallery}
             </Link>
           </Button>
         </motion.div>
@@ -73,7 +74,7 @@ export function GalleryDetail() {
           <div className="relative aspect-[4/3] w-full overflow-hidden bg-muted sm:aspect-video">
             {imageFailed ? (
               <div className="flex h-full w-full items-center justify-center text-text-muted">
-                <span>Image unavailable</span>
+                <span>{g.imageUnavailable}</span>
               </div>
             ) : (
               <img
