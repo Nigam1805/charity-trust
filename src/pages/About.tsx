@@ -1,7 +1,7 @@
 import { useState } from "react";
 import { siteContent } from "@/content/siteContent";
 import { ImpactStats } from "@/components/ImpactStats";
-import { Card, CardContent } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { User } from "lucide-react";
 
 type Person = {
@@ -46,6 +46,10 @@ export function About() {
   const { about, trustName, pages } = siteContent;
   const p = pages.about;
   const people = "people" in about ? about.people : [];
+  const coreValues =
+    "coreValues" in about ? about.coreValues : ([] as readonly { title: string; body: string }[]);
+  const whySupport =
+    "whySupport" in about ? about.whySupport : ([] as readonly { title: string; body: string }[]);
   const peopleSubtitle = p.peopleSubtitleTemplate.replace("{trustName}", trustName);
 
   return (
@@ -58,6 +62,26 @@ export function About() {
           <p className="mt-6 text-lg text-text-secondary leading-relaxed">{about.intro}</p>
         </div>
       </section>
+
+      {coreValues.length > 0 && (
+        <section className="py-12 md:py-16 bg-secondary">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-center text-2xl font-bold text-foreground md:text-3xl">
+              {p.coreValuesTitle}
+            </h2>
+            <div className="mx-auto mt-10 grid max-w-5xl gap-6 sm:grid-cols-2 lg:grid-cols-3">
+              {coreValues.map((item) => (
+                <Card key={item.title} className="h-full border-border/80 shadow-card">
+                  <CardHeader>
+                    <CardTitle className="text-lg">{item.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-sm leading-relaxed text-text-secondary">{item.body}</CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {people.length > 0 && (
         <section className="py-12 md:py-16 bg-secondary">
@@ -111,6 +135,29 @@ export function About() {
           <p className="mt-4 text-text-secondary leading-relaxed">{about.whyWeServe}</p>
         </div>
       </section>
+
+      {whySupport.length > 0 && (
+        <section className="py-12 md:py-16">
+          <div className="container mx-auto px-4">
+            <h2 className="font-heading text-center text-2xl font-bold text-foreground md:text-3xl">
+              {p.whySupportTitle}
+            </h2>
+            <p className="mx-auto mt-3 max-w-2xl text-center text-text-secondary">
+              {p.whySupportSubtitle}
+            </p>
+            <div className="mx-auto mt-10 grid max-w-5xl gap-6 md:grid-cols-2">
+              {whySupport.map((item) => (
+                <Card key={item.title} className="h-full border-border/80 shadow-card">
+                  <CardHeader>
+                    <CardTitle className="text-lg">{item.title}</CardTitle>
+                  </CardHeader>
+                  <CardContent className="text-sm leading-relaxed text-text-secondary">{item.body}</CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       <section className="py-16 md:py-20 bg-primary">
         <div className="container mx-auto px-4">

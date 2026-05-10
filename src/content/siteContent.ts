@@ -10,36 +10,86 @@ export const siteContent = {
   logoUrl: "/trust-logo.png",
   /** Same asset in the navbar, shown inside a circular badge. */
   siteTitleMarkUrl: "/trust-logo.png",
-  tagline: "Serving Humanity with Food and Care",
+  tagline: "Where compassion flows like a river of joy",
 
   hero: {
-    headline: "Serving Humanity with Food and Care",
+    headline: "Serving Humanity with Food, Care & Compassion",
     subtext:
-      "We provide nutritious meals to hospital patients, their families, school children, and people in need.",
+      "Child Education · Hospital Meal Program · Women Empowerment · Help the Needy · Social Welfare · Climate Action — six service areas, one mission: dignity, care, and lasting change at the grassroots.",
     ctaPrimary: "Donate Now",
     ctaSecondary: "Learn More",
   },
 
   about: {
     intro:
-      "Aanand Dhara Charitable Trust is a registered charitable trust dedicated to reducing hunger and malnutrition among the most vulnerable—patients in hospitals, their families, school children, and residents of ashrams and underserved communities. We believe that access to nutritious food is a basic right.",
+      "Aanand Dhara Charitable Trust is a registered non-profit organisation dedicated to uplifting underserved communities across India. The name Aanand Dhara — meaning ‘Stream of Joy’ — reflects our core belief: happiness and well-being naturally flow when communities come together to serve those most in need. From nourishing patients in hospitals to educating children, empowering women, driving social welfare, and protecting our environment — we work across six service areas to create meaningful, lasting change at the grassroots level. Every initiative is rooted in dignity, compassion, and full transparency. We are driven by the conviction that every human being deserves dignity, opportunity, and care — regardless of economic background. With the generous support of donors, volunteers, and community partners, Aanand Dhara Charitable Trust continues to be a lifeline for thousands of families every year.",
+    coreValues: [
+      {
+        title: "Compassion First",
+        body: "Every decision begins with empathy for the people we serve. No policy, process, or procedure comes before the well-being of our beneficiaries.",
+      },
+      {
+        title: "Full Transparency",
+        body: "We maintain open records and publish regular activity reports, ensuring every donor and supporter can see exactly how their contributions create impact.",
+      },
+      {
+        title: "Community Driven",
+        body: "We work alongside communities, not just for them. Local voices guide our programs to ensure real relevance and lasting ownership.",
+      },
+      {
+        title: "Sustainable Impact",
+        body: "Our programs are designed to create systemic change — not just temporary relief. We build capacity so communities can thrive independently.",
+      },
+      {
+        title: "Inclusivity",
+        body: "We serve regardless of caste, religion, gender, or background. Dignity and opportunity belong to every human being, without exception.",
+      },
+    ],
     mission:
-      "To provide timely, nutritious meals to those in need—whether in hospitals, schools, ashrams, or local communities—and to support families so they can focus on care and recovery rather than hunger.",
+      "To serve every person in need with dignity, care, and lasting compassion — through education, nutrition, empowerment, relief, social welfare, and environmental stewardship — so communities can grow stronger together.",
     vision:
-      "A society where no one goes hungry in times of need. We aim to be a reliable partner for hospitals, schools, and community institutions in the fight against malnutrition.",
+      "A India where every child can learn, every family is nourished in times of crisis, women lead with confidence, the most vulnerable receive immediate and long-term support, communities are healthy and inclusive, and our environment is protected for future generations.",
     activities: [
-      "Distribution of nutritious meals to patients and attendants in hospitals.",
-      "School meal programs to ensure children receive at least one healthy meal a day.",
-      "Food support to ashrams and similar institutions caring for the elderly and needy.",
-      "Community food distribution drives in underserved localities.",
+      "Child Education — quality schooling, learning materials, tuition support, and life-skills workshops for underprivileged children.",
+      "Hospital Meal Program — nutritious, hygienic meals for patients and accompanying family members at partner hospitals.",
+      "Women Empowerment — vocational training, self-help groups, financial literacy, and mentoring for women-led livelihoods.",
+      "Help the Needy — food, clothing, blankets, hygiene kits, and emergency relief for the homeless and disaster-affected.",
+      "Social Welfare — health camps, sanitation awareness, elderly care, and community development with local partners.",
+      "Climate Action — tree plantation, water storage tanks, rainwater harvesting, and environmental education.",
     ],
     whyWeServe:
-      "We serve because we believe that a simple meal can bring hope, dignity, and strength. Food is not just nutrition—it is care. By supporting patients, families, and children, we help them focus on healing and learning instead of worrying about their next meal.",
+      "We believe that when compassion flows like a stream of joy, entire communities rise. Every act of kindness — a meal, a lesson, a sapling, a listening ear — carries dignity and hope. We exist so that no one is left behind.",
+    whySupport: [
+      {
+        title: "Full Transparency & Accountability",
+        body: "Every rupee donated is used with complete accountability. We publish regular activity reports and impact summaries, and maintain open financial records for all donors, supporters, and stakeholders. Nothing is hidden — ever.",
+      },
+      {
+        title: "Grassroots Impact, No Middlemen",
+        body: "We work directly with the communities we serve. There are no middlemen, no unnecessary delays. Your support reaches the beneficiary immediately and effectively — creating real change on the ground.",
+      },
+      {
+        title: "Holistic, Multi-Dimensional Approach",
+        body: "From feeding the sick to educating children, empowering women, supporting the elderly, and planting trees — we address multiple dimensions of human and environmental welfare together, for deeper and more lasting impact.",
+      },
+      {
+        title: "CSR Partnership & Tax Benefits",
+        body: "Corporates and individuals can partner with us for CSR activities aligned with their values and commitments. Donations may be eligible for tax deduction benefits under applicable provisions of the Indian Income Tax Act.",
+      },
+      {
+        title: "Community-Centred & Inclusive",
+        body: "All our programs are designed with and for the communities we serve. We listen first, act together, and ensure that every individual — regardless of background — receives dignity, care, and opportunity.",
+      },
+      {
+        title: "Sustainable & Long-Term Programs",
+        body: "We do not just provide relief — we build capacity. Our programs are designed for sustainability, so communities can continue thriving even after our direct intervention has concluded. Change that lasts.",
+      },
+    ],
     impactStats: [
-      { label: "Meals Served", value: "50,000+" },
-      { label: "Families Supported", value: "2,500+" },
-      { label: "Schools Reached", value: "25+" },
-      { label: "Hospitals Partnered", value: "10+" },
+      { label: "Service Areas", value: "6+" },
+      { label: "Lives Impacted", value: "1,000+" },
+      { label: "Donation Driven", value: "100%" },
+      { label: "Compassion", value: "∞" },
     ],
     /** Key people – trustees, founders, or team. Use localImage (e.g. /images/team/1.jpg) or leave empty for placeholder. */
     people: [
@@ -70,100 +120,77 @@ export const siteContent = {
     ],
   },
 
-  /** Service images: use localImage paths under /images/services/; else imagePlaceholder. */
+  /** Six service areas — copy aligned with Aanand Dhara Trust content document. */
   services: [
     {
-      id: "hospital",
-      title: "Hospital Food Service",
-      description: "Provide nutritious food to patients and their family members.",
-      quote:
-        "The best way to find yourself is to lose yourself in the service of others.",
-      quoteAuthor: "Mahatma Gandhi",
-      icon: "Heart",
-      localImage: "/images/services/hospital.jpg",
-      imagePlaceholder:
-        "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80",
-    },
-    {
-      id: "school",
-      title: "School Meal Program",
-      description: "Provide meals to children in schools.",
-      quote:
-        "Education is the most powerful weapon which you can use to change the world.",
-      quoteAuthor: "Nelson Mandela",
-      icon: "UtensilsCrossed",
-      localImage: "/images/services/school.jpg",
-      imagePlaceholder:
-        "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=400&q=80",
-    },
-    {
-      id: "ashram",
-      title: "Ashram Support",
-      description: "Provide food to elderly and needy people in ashrams.",
-      quote:
-        "A society grows great when old men plant trees whose shade they know they shall never sit in.",
-      quoteAuthor: "Greek proverb",
-      icon: "Users",
-      localImage: "/images/services/ashram.jpg",
-      imagePlaceholder:
-        "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=400&q=80",
-    },
-    {
-      id: "community",
-      title: "Community Food Distribution",
-      description: "Food distribution in needy local communities.",
-      quote: "Alone we can do so little; together we can do so much.",
-      quoteAuthor: "Helen Keller",
-      icon: "Package",
-      localImage: "/images/services/community.jpg",
-      imagePlaceholder:
-        "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=400&q=80",
-    },
-    {
-      id: "education",
-      title: "Education",
+      id: "child-education",
+      title: "Child Education",
       description:
-        "Support for schooling, learning materials, and programmes so children and youth can build a better future.",
-      quote:
-        "Education is not the filling of a pail, but the lighting of a fire.",
-      quoteAuthor: "William Butler Yeats",
+        "Aanand Dhara Charitable Trust believes that education is the most powerful tool for breaking the cycle of poverty. We support underprivileged children with access to quality schooling, learning materials, tuition assistance, and skill-building workshops. Our programs focus on building strong foundations in literacy, numeracy, and life skills so that every child — regardless of economic background — can grow up to realise their full potential.",
+      bullets: [
+        "Free books, stationery and school supplies for children in need.",
+        "After-school tuition support and community learning centres.",
+        "Scholarships for meritorious but financially challenged students.",
+        "Awareness campaigns to reduce school dropout rates in rural areas.",
+        "Educational workshops on hygiene, health, and life skills.",
+      ],
+      quote: "Education is the most powerful weapon which you can use to change the world.",
+      quoteAuthor: "Nelson Mandela",
       icon: "GraduationCap",
       localImage: "/images/services/education.jpg",
       imagePlaceholder:
         "https://images.unsplash.com/photo-1503676260728-1c00da094a0b?w=400&q=80",
     },
     {
-      id: "old-age-home",
-      title: "Old Age Home",
+      id: "hospital-meals",
+      title: "Hospital Meal Program",
       description:
-        "Care, companionship, and dignified living for senior citizens who need a safe and supportive home.",
-      quote:
-        "To care for those who once cared for us is one of the highest honours.",
-      quoteAuthor: "Tia Walker",
-      icon: "Home",
-      localImage: "/images/services/old-age-home.jpg",
-      /** Picxy photo 363558 — https://www.picxy.com/photo/363558 */
+        "Illness is already a heavy burden — hunger should never add to it. Our Hospital Meal Program provides nutritious, hygienic, and freshly prepared meals to patients and their accompanying family members at hospitals. We recognise that caregivers often go without food while attending to their loved ones. A warm, nourishing meal is more than food — it is a message that someone cares.",
+      bullets: [
+        "Daily distribution of healthy, freshly prepared meals to patients.",
+        "Nutritious food packages for family members accompanying patients.",
+        "Special diet meals for patients with specific health conditions.",
+        "Partnerships with hospitals, clinics, and healthcare institutions.",
+        "Volunteer-driven distribution with warmth and compassion.",
+      ],
+      quote: "The best way to find yourself is to lose yourself in the service of others.",
+      quoteAuthor: "Mahatma Gandhi",
+      icon: "UtensilsCrossed",
+      localImage: "/images/services/hospital.jpg",
       imagePlaceholder:
-        "https://images.picxy.com/cache/2019/10/15/eaed00e1c5d43e74537444690b6b15b4.jpg",
+        "https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?w=400&q=80",
     },
     {
       id: "women-empowerment",
       title: "Women Empowerment",
       description:
-        "Skills training, livelihood support, and programmes that help women become confident and self-reliant.",
+        "At Aanand Dhara, we believe that empowering a woman empowers an entire community. Our women empowerment programs provide vocational training, skill development workshops, financial literacy education, and self-help group support. We work to ensure that women — especially from rural and low-income backgrounds — have the tools, confidence, and support networks to lead independent, dignified lives.",
+      bullets: [
+        "Vocational training in tailoring, handicrafts and digital skills.",
+        "Self-help group formation and micro-finance assistance.",
+        "Financial literacy and entrepreneurship workshops.",
+        "Legal awareness and women's rights education programs.",
+        "Mentoring support for women-led small businesses and startups.",
+      ],
       quote: "There is no limit to what we, as women, can accomplish.",
       quoteAuthor: "Michelle Obama",
       icon: "HeartHandshake",
       localImage: "/images/services/women-empowerment.jpg",
-      /** Pexels: Empowered women's cooperative, Bangladesh — https://www.pexels.com/photo/empowered-women-s-cooperative-in-bangladesh-36746074/ */
       imagePlaceholder:
         "https://images.pexels.com/photos/36746074/pexels-photo-36746074.jpeg?auto=compress&cs=tinysrgb&w=800",
     },
     {
       id: "help-needy",
-      title: "Help Needy People",
+      title: "Help the Needy",
       description:
-        "Food, essentials, and direct aid for families and individuals facing hardship in our communities.",
+        "From homeless individuals to flood-affected families and daily-wage workers during times of crisis, Aanand Dhara Charitable Trust is on the ground providing immediate relief and long-term support to those who need it most. We distribute food, clothing, blankets, hygiene kits, and essential supplies so that no human being is denied basic dignity.",
+      bullets: [
+        "Food distribution drives during festivals, winters, and emergencies.",
+        "Blanket and warm clothing donation camps in cold seasons.",
+        "Hygiene kit and essential supply distribution to homeless individuals.",
+        "Emergency relief and support during floods, droughts and disasters.",
+        "Street children care and shelter support initiatives.",
+      ],
       quote: "We make a living by what we get, but we make a life by what we give.",
       quoteAuthor: "Winston Churchill",
       icon: "HandHeart",
@@ -172,17 +199,43 @@ export const siteContent = {
         "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=400&q=80",
     },
     {
-      id: "health",
-      title: "Health",
+      id: "social-welfare",
+      title: "Social Welfare",
       description:
-        "Health awareness, medical camps, and support so vulnerable people can access care and stay well.",
-      quote:
-        "It is health that is real wealth and not pieces of gold and silver.",
-      quoteAuthor: "Mahatma Gandhi",
-      icon: "Stethoscope",
+        "Our social welfare initiatives address the root causes of poverty, inequality, and social exclusion at the community level. We run free health check-up camps, hygiene and sanitation awareness workshops, elderly care programs, and community development activities. By partnering with local governments and civil society organisations, we amplify our reach.",
+      bullets: [
+        "Free health check-up and medical camps in rural areas and urban slums.",
+        "Sanitation, hygiene and clean drinking water awareness campaigns.",
+        "Support programs and recreational activities for senior citizens.",
+        "Community development and rural infrastructure upliftment projects.",
+        "Awareness drives on education, nutrition and preventive healthcare.",
+      ],
+      quote: "Alone we can do so little; together we can do so much.",
+      quoteAuthor: "Helen Keller",
+      icon: "Users",
       localImage: "/images/services/health.jpg",
       imagePlaceholder:
         "https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?w=400&q=80",
+    },
+    {
+      id: "climate-action",
+      title: "Climate Action",
+      description:
+        "Aanand Dhara Charitable Trust takes its responsibility towards the environment seriously. Our climate action programs focus on large-scale tree plantation drives to restore green cover and reduce carbon footprint, and the construction of water storage tanks where access to clean drinking water remains scarce. Every tree planted and every drop of water saved is a gift to current and future generations.",
+      bullets: [
+        "Large-scale tree plantation drives in communities, schools and highways.",
+        "Construction of water storage tanks in water-scarce regions.",
+        "Rainwater harvesting systems for villages and rural households.",
+        "Environmental and climate awareness education for children and youth.",
+        "Community training on water conservation and sustainable practices.",
+        "Native and climate-resilient species prioritised; follow-up monitoring of saplings.",
+      ],
+      quote: "The Earth is what we all have in common.",
+      quoteAuthor: "Wendell Berry",
+      icon: "Trees",
+      localImage: "/images/services/community.jpg",
+      imagePlaceholder:
+        "https://images.unsplash.com/photo-1542601906990-b4d3fb778b09?w=400&q=80",
     },
   ],
 
@@ -299,9 +352,10 @@ export const siteContent = {
   ],
 
   donation: {
-    message: "Your donation helps us serve meals to those who need it most.",
+    message:
+      "Your donation supports education, hospital meals, women’s empowerment, relief for the needy, social welfare, and climate action — with full transparency.",
     instructions:
-      "You can support our cause by transferring funds to our bank account or using UPI. Every contribution goes directly toward providing nutritious meals.",
+      "Transfer funds by bank or UPI, or explore CSR partnerships. Every contribution is accounted for with open records and activity reports.",
     bankName: "Example Bank",
     accountName: "Aanand Dhara Charitable Trust",
     accountNumber: "1234567890123456",
@@ -320,7 +374,7 @@ export const siteContent = {
     upiIdLabel: "UPI ID:",
     upiSideTextBeforeId: "Scan with any UPI app to donate. Or use UPI ID:",
     thankYouFooter:
-      "Thank you for your generosity. Every contribution helps us serve more meals.",
+      "Thank you for your generosity. Together we can ensure every child learns, every family is nourished, and every community thrives.",
     qrAlt: "UPI QR Code for donations",
     qrLoadFailed: "QR code image",
   },
@@ -346,28 +400,29 @@ export const siteContent = {
 
   homePage: {
     impactTitle: "Our Impact",
-    impactSubtitle: "Together we are making a difference in the lives of those in need.",
+    impactSubtitle:
+      "Six focused initiatives — lives touched across India — driven by donors, volunteers, and community partners.",
     galleryTitle: "Gallery",
     gallerySubtitle: "Glimpses of our work and the communities we serve.",
     galleryViewAll: "View All",
     finalCtaTitle: "Join Us in Making a Difference",
     finalCtaSubtitle:
-      "Your support helps us serve more meals to patients, families, and children in need.",
+      "Join the movement. Donate · Volunteer · Partner · Spread the word — every act of kindness creates a powerful wave of change.",
     finalCtaDonate: "Donate Now",
     finalCtaContact: "Contact Us",
   },
 
   servicesPage: {
-    title: "Our Services",
+    title: "Our Service Areas",
     subtitle:
-      "From hospital and school meals to ashrams and communities—plus education, elder care, women's programmes, aid, and health.",
+      "Six focused initiatives, one shared mission — to serve every person in need with dignity, care, and lasting compassion.",
   },
 
   pages: {
     donate: {
       title: "Donate",
       intro:
-        "Your contribution helps us provide nutritious meals to hospital patients, school children, and families in need.",
+        "Your contribution strengthens child education, hospital meals, women's empowerment, help for the needy, social welfare, and climate action — with accountability you can trust.",
     },
     contact: {
       title: "Contact Us",
@@ -375,21 +430,25 @@ export const siteContent = {
       infoHeading: "Contact Information",
     },
     about: {
-      title: "About Us",
+      title: "Who We Are",
       peopleTitle: "Our People",
       peopleSubtitleTemplate: "The trustees and team behind {trustName}.",
+      coreValuesTitle: "Our Core Values",
       missionTitle: "Our Mission",
       visionTitle: "Our Vision",
-      activitiesTitle: "Our Activities",
+      activitiesTitle: "What We Focus On",
       whyWeServeTitle: "Why We Serve",
-      impactNumbersTitle: "Impact in Numbers",
+      whySupportTitle: "Why Support Us",
+      whySupportSubtitle:
+        "Join the movement. Be the change. Donate · Volunteer · Partner with us · Spread the word.",
+      impactNumbersTitle: "Impact at a Glance",
     },
     gallery: {
       title: "Gallery",
       intro:
-        "Glimpses of our food distribution efforts, volunteers, and the communities we serve.",
+        "Glimpses of education support, hospital meals, empowerment programmes, relief work, welfare camps, climate drives, and the communities we serve.",
       body:
-        "From hospital meals and school programmes to ashram support and community drives—every image reflects the impact of your donations. Tap any image to read the full story.",
+        "Every image reflects the impact of donors and volunteers across our six service areas. Tap any image to read the full story.",
       gridTitle: "Our work in pictures",
       galleryCountLine: "{count} moments from the field.",
       imagePlaceholder: "Image",

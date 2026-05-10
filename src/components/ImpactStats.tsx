@@ -6,20 +6,17 @@ interface ImpactStat {
   value: string;
 }
 
-function parseStatValue(value: string): { number: number; suffix: string } {
-  const match = value.replace(/,/g, "").match(/^([\d.]+)(.*)$/);
-  if (!match) return { number: 0, suffix: value };
-  return { number: parseInt(match[1], 10) || 0, suffix: match[2] || "" };
-}
-
 function AnimatedNumber({ value }: { value: string }) {
   const ref = useRef<HTMLSpanElement>(null);
   const isInView = useInView(ref, { once: true, amount: 0.3 });
-  const { number: target, suffix } = parseStatValue(value);
+  const match = value.replace(/,/g, "").trim().match(/^([\d.]+)(.*)$/);
+  const canAnimate = Boolean(match && /^[\d.]+$/.test(match[1]));
+  const target = canAnimate && match ? parseInt(match[1], 10) || 0 : 0;
+  const suffix = canAnimate && match ? match[2] || "" : "";
   const [display, setDisplay] = useState(0);
 
   useEffect(() => {
-    if (!isInView) return;
+    if (!isInView || !canAnimate) return;
     const duration = 1500;
     const start = performance.now();
     const step = (now: number) => {
@@ -30,12 +27,21 @@ function AnimatedNumber({ value }: { value: string }) {
       if (progress < 1) requestAnimationFrame(step);
     };
     requestAnimationFrame(step);
-  }, [isInView, target]);
+  }, [isInView, target, canAnimate]);
 
-  const formatted = target >= 1000 ? display.toLocaleString() : String(display);
+  if (!canAnimate) {
+    return (
+      <span ref={ref} className="tabular-nums">
+        {value}
+      </span>
+    );
+  }
+
+  const formatted =
+    target >= 1000 ? display.toLocaleString() : String(display);
 
   return (
-    <span ref={ref}>
+    <span ref={ref} className="tabular-nums">
       {formatted}
       {suffix}
     </span>

@@ -10,10 +10,11 @@ import {
   HeartHandshake,
   HandHeart,
   Stethoscope,
+  Trees,
   type LucideIcon,
 } from "lucide-react";
 import { siteContent } from "@/content/siteContent";
-import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const iconMap: Record<string, LucideIcon> = {
   Heart,
@@ -25,6 +26,7 @@ const iconMap: Record<string, LucideIcon> = {
   HeartHandshake,
   HandHeart,
   Stethoscope,
+  Trees,
 };
 
 function ServiceImage({
@@ -98,6 +100,7 @@ export function Services() {
               icon: string;
               title: string;
               description: string;
+              bullets?: readonly string[];
               quote: string;
               quoteAuthor: string;
               imagePlaceholder: string;
@@ -120,7 +123,16 @@ export function Services() {
                       <Icon className="h-5 w-5" />
                     </div>
                     <CardTitle>{service.title}</CardTitle>
-                    <CardDescription>{service.description}</CardDescription>
+                    <div className="space-y-3 text-base text-text-secondary">
+                      <p>{svc.description}</p>
+                      {svc.bullets && svc.bullets.length > 0 ? (
+                        <ul className="list-disc space-y-1 pl-4">
+                          {svc.bullets.map((line) => (
+                            <li key={line}>{line}</li>
+                          ))}
+                        </ul>
+                      ) : null}
+                    </div>
                   </CardHeader>
                   <CardContent className="border-t border-primary/10 bg-primary-light/30 pb-6 pt-4">
                     <blockquote className="space-y-2">
