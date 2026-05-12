@@ -239,115 +239,205 @@ export const siteContent = {
     },
   ],
 
-  /** Gallery: use localImage (e.g. /images/gallery/1.jpg) for your own real donation photos; else src. Add your images to public/images/gallery/. */
+  /** Gallery — photos from Downloads/selected; local files in public/images/gallery/. */
   gallery: [
     {
       id: "1",
       localImage: "/images/gallery/1.jpg",
       src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
-      alt: "Volunteers distributing meals in India",
-      caption: "Food distribution at hospital",
+      alt: "Hospital ward visit with nutritional supplements for a mother and child",
+      caption: "Beside the bed, with care",
       description:
-        "Our volunteers distribute nutritious meals to patients and their families at partner hospitals across India. Every meal helps families focus on recovery.",
+        "Supporting a patient and family in the hospital with nutritional supplements — small comforts that help recovery feel less alone.",
     },
     {
       id: "2",
       localImage: "/images/gallery/2.jpg",
       src: "https://images.unsplash.com/photo-1587654780291-39c9404d746b?w=600&q=80",
-      alt: "Indian meals for school children",
-      caption: "School meal program",
+      alt: "Medicines handed to a woman patient on a hospital bed",
+      caption: "Essential medicines in the ward",
       description:
-        "We provide hot, nutritious Indian meals to school children so they can learn on a full stomach. Our school meal program reaches thousands of students.",
+        "Delivering prescribed medicines directly to patients so treatment can continue without added worry.",
     },
     {
       id: "3",
       localImage: "/images/gallery/3.jpg",
       src: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&q=80",
-      alt: "Community donation drive in India",
-      caption: "Community food drive",
+      alt: "Elderly patient in hospital bed with visitors bringing supplement boxes",
+      caption: "With families at difficult times",
       description:
-        "Community members and volunteers come together to collect and distribute food to needy families in local neighbourhoods and villages.",
+        "Standing with an elderly patient and loved ones — supplements and solidarity during a long stay in care.",
     },
     {
       id: "4",
       localImage: "/images/gallery/4.jpg",
       src: "https://images.unsplash.com/photo-1596797038530-2c107229654b?w=600&q=80",
-      alt: "Gujarati-style meal served at ashram",
-      caption: "Ashram meal service",
+      alt: "Volunteer giving medicine boxes to a young patient with IV line",
+      caption: "Support for patients on treatment",
       description:
-        "We support ashrams and care homes with regular meal supplies. Elderly and needy residents receive wholesome Indian food with dignity and care.",
+        "Reaching patients who are on drips and daily medication — every box is one less burden on the ward.",
     },
     {
       id: "5",
       localImage: "/images/gallery/5.jpg",
       src: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80",
-      alt: "Indian volunteers at food bank",
-      caption: "Volunteers at work",
+      alt: "Stacks of health supplement cartons with Aanand Dhara Charitable Trust banner",
+      caption: "Stocked for the next round of giving",
       description:
-        "Our dedicated volunteers pack and distribute food parcels. Together we ensure no one in our community goes hungry.",
+        "Preparing cartons of wellness supplements under the trust banner — ready to move from the storeroom to those who need them.",
     },
     {
       id: "6",
       localImage: "/images/gallery/6.jpg",
       src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80",
-      alt: "Indian food for families in need",
-      caption: "Family receiving meals",
+      alt: "Volunteer with supplement boxes in front of trust registration banner",
+      caption: "Ahmedabad — our home base",
       description:
-        "Families in need receive nutritious Indian meals through our distribution centres. Your donations help us serve more families every day.",
+        "Registered trust activity in Chandlodia and surrounding areas — accountable, local, and people-first.",
     },
     {
       id: "7",
       localImage: "/images/gallery/7.jpg",
       src: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=600&q=80",
-      alt: "Donation drive – packing meals",
-      caption: "Packing meals for distribution",
+      alt: "Food staples handed over in a basin at a charity handover",
+      caption: "Food essentials for a family",
       description:
-        "Volunteers pack fresh, nutritious meals at our distribution centre. Your donations fund ingredients and logistics so we can reach more people in need.",
+        "A full basin of groceries — rice, oil, and staples — handed over so a household can cook with dignity.",
     },
     {
       id: "8",
       localImage: "/images/gallery/8.jpg",
       src: "https://images.unsplash.com/photo-1469571486292-0ba58a3f068b?w=600&q=80",
-      alt: "Donation collection point",
-      caption: "Donation collection point",
+      alt: "Ration kit of flour, oil, pulses, and vegetables in front of trust banner",
+      caption: "A ration kit, ready to go",
       description:
-        "Community members drop off food and supplies at our collection points. Every contribution—whether food or funds—helps us fight hunger locally.",
+        "Flour, oil, pulses, onions, and potatoes lined up for families — one kit can steady a week at home.",
     },
     {
       id: "9",
       localImage: "/images/gallery/9.jpg",
       src: "https://images.unsplash.com/photo-1532629345422-7515f3d16bb6?w=600&q=80",
-      alt: "Receiving donated groceries",
-      caption: "Receiving donated groceries",
+      alt: "Volunteer handing snack packets to schoolchildren on the pavement",
+      caption: "Snacks for schoolchildren",
       description:
-        "Families in need receive grocery kits from our donation drives. We partner with local vendors and donors to provide essential staples and fresh produce.",
+        "A quick smile on the sidewalk — snack packets for children after school or on the way home.",
     },
     {
       id: "10",
       localImage: "/images/gallery/10.jpg",
       src: "https://images.unsplash.com/photo-1559027615-cd4628902d4a?w=600&q=80",
-      alt: "Volunteers preparing food",
-      caption: "Volunteers preparing food",
+      alt: "Community snack distribution from a cardboard box on the street",
+      caption: "Outreach in the neighbourhood",
       description:
-        "Our kitchen volunteers prepare hot meals daily for hospital visitors, school programmes, and community centres. Your support keeps this going.",
+        "Volunteers and neighbours gather around a simple box — small packets, big warmth in the open air.",
     },
     {
       id: "11",
       localImage: "/images/gallery/11.jpg",
       src: "https://images.unsplash.com/photo-1593113598332-cd288d649433?w=600&q=80",
-      alt: "Mid-day meal at school",
-      caption: "Mid-day meal at school",
+      alt: "Children in school uniform receiving packets from volunteers",
+      caption: "Reaching children where they are",
       description:
-        "Children enjoy a hot mid-day meal at a partner school. Full stomachs help them concentrate and stay in school. Donations directly fund these meals.",
+        "School uniforms and bright faces — distributing snacks where families live and study.",
     },
     {
       id: "12",
       localImage: "/images/gallery/12.jpg",
       src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80",
-      alt: "Thank you to our donors",
-      caption: "Thank you to our donors",
+      alt: "Street distribution of food packets to a family with children",
+      caption: "Kindness on the street",
       description:
-        "We are grateful to every donor and volunteer. Your generosity turns into meals, hope, and dignity for thousands. Join us—donate or volunteer today.",
+        "Stopping for a moment on the roadside — snacks shared with children and parents in the community.",
+    },
+    {
+      id: "13",
+      localImage: "/images/gallery/13.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Trust volunteers handing a meal tray to an elderly woman in front of trust banner",
+      caption: "A hot meal, hand to hand",
+      description:
+        "Volunteers serve a plated meal to an elder in front of the trust banner — dignity and nutrition together.",
+    },
+    {
+      id: "14",
+      localImage: "/images/gallery/14.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Elderly woman eating at a bunk bed in a shared care facility with a volunteer",
+      caption: "Care where people stay",
+      description:
+        "A quiet moment in a dormitory-style shelter — a warm meal and company for someone who needs both.",
+    },
+    {
+      id: "15",
+      localImage: "/images/gallery/15.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Community hall meal with young people seated at tables and trust banner",
+      caption: "Community hall lunch",
+      description:
+        "Trust volunteers with youth enjoying a shared meal — simple food, strong community.",
+    },
+    {
+      id: "16",
+      localImage: "/images/gallery/16.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Volunteers serving vada pav to students at long tables with trust banner",
+      caption: "School-age meal service",
+      description:
+        "Fresh vada pav and chutney for rows of students — energy for the afternoon and a full hall of thanks.",
+    },
+    {
+      id: "17",
+      localImage: "/images/gallery/17.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Volunteer handing a basin of rice, oil, and staples to a woman in a pink sari",
+      caption: "Groceries for the kitchen",
+      description:
+        "Oil, rice, and staples in one basin — practical help so a family can cook at home without worry.",
+    },
+    {
+      id: "18",
+      localImage: "/images/gallery/18.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Hospital corridor sign for TBCD wards on the seventh floor",
+      caption: "Inside the hospital we serve",
+      description:
+        "Wayfinding in a busy public hospital — our teams walk these corridors to reach patients on the wards.",
+    },
+    {
+      id: "19",
+      localImage: "/images/gallery/19.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Volunteer handing a container to a patient in a hospital bed",
+      caption: "Bedside support",
+      description:
+        "A small container of food or supplement — a direct handoff so rest and recovery come first.",
+    },
+    {
+      id: "20",
+      localImage: "/images/gallery/20.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Volunteer giving packaged items to an elderly man on a hospital bed",
+      caption: "For elders in the ward",
+      description:
+        "Listening, handing over essentials, and staying a minute longer — care that feels human.",
+    },
+    {
+      id: "21",
+      localImage: "/images/gallery/21.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Volunteer with health items beside an elderly woman in a hospital bed",
+      caption: "Comfort at the bedside",
+      description:
+        "Digestives, supplements, and a smile — small items that say someone is thinking of you.",
+    },
+    {
+      id: "22",
+      localImage: "/images/gallery/22.jpg",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Bottled health products on display with Anand Dhara Charitable Trust banner",
+      caption: "Ready for distribution",
+      description:
+        "Bottled supplements lined up under the trust banner in Ahmedabad — the next batch heading out to those in need.",
     },
   ],
 
@@ -402,8 +492,9 @@ export const siteContent = {
     impactTitle: "Our Impact",
     impactSubtitle:
       "Six focused initiatives — lives touched across India — driven by donors, volunteers, and community partners.",
-    galleryTitle: "Gallery",
-    gallerySubtitle: "Glimpses of our work and the communities we serve.",
+    galleryTitle: "On the ground in Ahmedabad",
+    gallerySubtitle:
+      "Hospital visits, trust-led drives, food kits, community meals, and neighbourhood outreach — real moments from our work.",
     galleryViewAll: "View All",
     finalCtaTitle: "Join Us in Making a Difference",
     finalCtaSubtitle:
@@ -446,11 +537,11 @@ export const siteContent = {
     gallery: {
       title: "Gallery",
       intro:
-        "Glimpses of education support, hospital meals, empowerment programmes, relief work, welfare camps, climate drives, and the communities we serve.",
+        "Hospital wards, distribution halls, and neighbourhood streets — photos from Aanand Dhara Charitable Trust’s programmes in and around Ahmedabad.",
       body:
-        "Every image reflects the impact of donors and volunteers across our six service areas. Tap any image to read the full story.",
-      gridTitle: "Our work in pictures",
-      galleryCountLine: "{count} moments from the field.",
+        "Supplements and medicines for patients, meals and kits for families, trust banners and volunteers with schoolchildren. Tap any image to read more.",
+      gridTitle: "Hospitals, halls, and streets",
+      galleryCountLine: "{count} photos from the field.",
       imagePlaceholder: "Image",
       viewDetails: "View details",
       notFoundTitle: "Image not found",

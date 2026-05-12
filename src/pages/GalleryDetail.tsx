@@ -80,7 +80,7 @@ export function GalleryDetail() {
               <img
                 src={imageSrc}
                 alt={item.alt ?? "Gallery image"}
-                className="h-full w-full object-cover"
+                className="h-full w-full object-contain"
                 onError={handleImageError}
               />
             )}

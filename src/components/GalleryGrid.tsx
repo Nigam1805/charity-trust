@@ -25,13 +25,7 @@ export function getGalleryImageSrc(item: GalleryItemType) {
   return item.localImage ?? item.src;
 }
 
-function GalleryCard({
-  item,
-  index,
-}: {
-  item: GalleryItem;
-  index: number;
-}) {
+function GalleryCard({ item, index }: { item: GalleryItem; index: number }) {
   const gl = siteContent.pages.gallery;
   const itemTyped = item as GalleryItemType;
   const primarySrc = getGalleryImageSrc(itemTyped);
@@ -39,7 +33,8 @@ function GalleryCard({
   const [failed, setFailed] = useState(false);
 
   const handleError = () => {
-    if (src === primarySrc && itemTyped.src !== primarySrc) setSrc(itemTyped.src);
+    if (src === primarySrc && itemTyped.src !== primarySrc)
+      setSrc(itemTyped.src);
     else setFailed(true);
   };
 
@@ -66,7 +61,11 @@ function GalleryCard({
       initial={{ opacity: 0, y: 16 }}
       whileInView={{ opacity: 1, y: 0 }}
       viewport={{ once: true, amount: 0.15 }}
-      transition={{ duration: 0.4, delay: index * 0.06, ease: [0.25, 0.4, 0.25, 1] }}
+      transition={{
+        duration: 0.4,
+        delay: index * 0.06,
+        ease: [0.25, 0.4, 0.25, 1],
+      }}
     >
       <Link
         to={`/gallery/${item.id}`}
@@ -74,20 +73,20 @@ function GalleryCard({
           "group relative block overflow-hidden rounded-xl border-2 border-border bg-background shadow-card",
           "transition-all duration-300 ease-out",
           "hover:border-primary hover:shadow-xl hover:shadow-primary/15 hover:-translate-y-1",
-          "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:border-primary"
+          "focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2 focus:border-primary",
         )}
       >
-        <div className="relative aspect-[4/3] w-full overflow-hidden bg-secondary">
-          <img
-            src={src}
-            alt={item.alt}
-            className="h-full w-full object-cover transition-transform duration-500 ease-out group-hover:scale-110"
-            onError={handleError}
-          />
+      <div className="relative h-[550px] w-full overflow-hidden bg-secondary">
+  <img
+    src={src}
+    alt={item.alt}
+    className="h-full w-full object-cover object-top transition-transform duration-500 ease-out group-hover:scale-105"
+    onError={handleError}
+  />
           <div
             className={cn(
               "absolute inset-0 flex flex-col items-center justify-center gap-2 bg-primary/90 opacity-0 transition-opacity duration-300 group-hover:opacity-100",
-              "text-primary-foreground"
+              "text-primary-foreground",
             )}
           >
             <span className="text-sm font-medium">{gl.viewDetails}</span>
@@ -104,7 +103,10 @@ function GalleryCard({
   );
 }
 
-export function GalleryGrid({ preview = false, maxPreviewItems = 6 }: GalleryGridProps) {
+export function GalleryGrid({
+  preview = false,
+  maxPreviewItems = 6,
+}: GalleryGridProps) {
   const gallery = siteContent.gallery;
   const items = preview ? gallery.slice(0, maxPreviewItems) : gallery;
 
