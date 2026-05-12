@@ -24,7 +24,7 @@ export function Home() {
         className="py-16 md:py-20 bg-background"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: "some", margin: "0px 0px 160px 0px" }}
         variants={sectionVariants}
         transition={{ duration: 0.5 }}
       >
@@ -52,7 +52,7 @@ export function Home() {
         className="py-16 md:py-20 bg-background"
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        viewport={{ once: true, amount: "some", margin: "0px 0px 160px 0px" }}
         variants={sectionVariants}
         transition={{ duration: 0.5 }}
       >

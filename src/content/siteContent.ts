@@ -1,6 +1,6 @@
 /**
- * WEBSITE CONTENT — single source for copy, nav labels, page titles, forms, footer, and media paths.
- * Sections: trustName, logoUrl / siteTitleMarkUrl (trust-logo.png), tagline, hero, about, services[], gallery[], donation, nav, footerLabels,
+ * WEBSITE CONTENT  single source for copy, nav labels, page titles, forms, footer, and media paths.
+ * Sections: trustName, logoUrl / siteTitleMarkUrl (trust-logo.png), tagline, hero (incl. optional backgroundImage), about, services[], gallery[], donation, nav, footerLabels,
  * homePage, servicesPage, pages.{donate,contact,about,gallery}, mapSection, contactForm, contact.
  */
 
@@ -13,16 +13,18 @@ export const siteContent = {
   tagline: "Where compassion flows like a river of joy",
 
   hero: {
+    /** Full-width hero photo in public/; leave empty string to use gradient-only hero. */
+    backgroundImage: "/hero-background.png?v=2",
     headline: "Serving Humanity with Food, Care & Compassion",
     subtext:
-      "Child Education · Hospital Meal Program · Women Empowerment · Help the Needy · Social Welfare · Climate Action — six service areas, one mission: dignity, care, and lasting change at the grassroots.",
+      "Child Education · Hospital Meal Program · Women Empowerment · Help the Needy · Social Welfare · Climate Action  six service areas, one mission: dignity, care, and lasting change at the grassroots.",
     ctaPrimary: "Donate Now",
     ctaSecondary: "Learn More",
   },
 
   about: {
     intro:
-      "Aanand Dhara Charitable Trust is a registered non-profit organisation dedicated to uplifting underserved communities across India. The name Aanand Dhara — meaning ‘Stream of Joy’ — reflects our core belief: happiness and well-being naturally flow when communities come together to serve those most in need. From nourishing patients in hospitals to educating children, empowering women, driving social welfare, and protecting our environment — we work across six service areas to create meaningful, lasting change at the grassroots level. Every initiative is rooted in dignity, compassion, and full transparency. We are driven by the conviction that every human being deserves dignity, opportunity, and care — regardless of economic background. With the generous support of donors, volunteers, and community partners, Aanand Dhara Charitable Trust continues to be a lifeline for thousands of families every year.",
+      "Aanand Dhara Charitable Trust is a registered non-profit organisation dedicated to uplifting underserved communities across India. The name Aanand Dhara  meaning ‘Stream of Joy’  reflects our core belief: happiness and well-being naturally flow when communities come together to serve those most in need. From nourishing patients in hospitals to educating children, empowering women, driving social welfare, and protecting our environment  we work across six service areas to create meaningful, lasting change at the grassroots level. Every initiative is rooted in dignity, compassion, and full transparency. We are driven by the conviction that every human being deserves dignity, opportunity, and care  regardless of economic background. With the generous support of donors, volunteers, and community partners, Aanand Dhara Charitable Trust continues to be a lifeline for thousands of families every year.",
     coreValues: [
       {
         title: "Compassion First",
@@ -38,7 +40,7 @@ export const siteContent = {
       },
       {
         title: "Sustainable Impact",
-        body: "Our programs are designed to create systemic change — not just temporary relief. We build capacity so communities can thrive independently.",
+        body: "Our programs are designed to create systemic change  not just temporary relief. We build capacity so communities can thrive independently.",
       },
       {
         title: "Inclusivity",
@@ -46,31 +48,31 @@ export const siteContent = {
       },
     ],
     mission:
-      "To serve every person in need with dignity, care, and lasting compassion — through education, nutrition, empowerment, relief, social welfare, and environmental stewardship — so communities can grow stronger together.",
+      "To serve every person in need with dignity, care, and lasting compassion  through education, nutrition, empowerment, relief, social welfare, and environmental stewardship  so communities can grow stronger together.",
     vision:
       "A India where every child can learn, every family is nourished in times of crisis, women lead with confidence, the most vulnerable receive immediate and long-term support, communities are healthy and inclusive, and our environment is protected for future generations.",
     activities: [
-      "Child Education — quality schooling, learning materials, tuition support, and life-skills workshops for underprivileged children.",
-      "Hospital Meal Program — nutritious, hygienic meals for patients and accompanying family members at partner hospitals.",
-      "Women Empowerment — vocational training, self-help groups, financial literacy, and mentoring for women-led livelihoods.",
-      "Help the Needy — food, clothing, blankets, hygiene kits, and emergency relief for the homeless and disaster-affected.",
-      "Social Welfare — health camps, sanitation awareness, elderly care, and community development with local partners.",
-      "Climate Action — tree plantation, water storage tanks, rainwater harvesting, and environmental education.",
+      "Child Education  quality schooling, learning materials, tuition support, and life-skills workshops for underprivileged children.",
+      "Hospital Meal Program  nutritious, hygienic meals for patients and accompanying family members at partner hospitals.",
+      "Women Empowerment  vocational training, self-help groups, financial literacy, and mentoring for women-led livelihoods.",
+      "Help the Needy  food, clothing, blankets, hygiene kits, and emergency relief for the homeless and disaster-affected.",
+      "Social Welfare  health camps, sanitation awareness, elderly care, and community development with local partners.",
+      "Climate Action  tree plantation, water storage tanks, rainwater harvesting, and environmental education.",
     ],
     whyWeServe:
-      "We believe that when compassion flows like a stream of joy, entire communities rise. Every act of kindness — a meal, a lesson, a sapling, a listening ear — carries dignity and hope. We exist so that no one is left behind.",
+      "We believe that when compassion flows like a stream of joy, entire communities rise. Every act of kindness  a meal, a lesson, a sapling, a listening ear  carries dignity and hope. We exist so that no one is left behind.",
     whySupport: [
       {
         title: "Full Transparency & Accountability",
-        body: "Every rupee donated is used with complete accountability. We publish regular activity reports and impact summaries, and maintain open financial records for all donors, supporters, and stakeholders. Nothing is hidden — ever.",
+        body: "Every rupee donated is used with complete accountability. We publish regular activity reports and impact summaries, and maintain open financial records for all donors, supporters, and stakeholders. Nothing is hidden  ever.",
       },
       {
         title: "Grassroots Impact, No Middlemen",
-        body: "We work directly with the communities we serve. There are no middlemen, no unnecessary delays. Your support reaches the beneficiary immediately and effectively — creating real change on the ground.",
+        body: "We work directly with the communities we serve. There are no middlemen, no unnecessary delays. Your support reaches the beneficiary immediately and effectively  creating real change on the ground.",
       },
       {
         title: "Holistic, Multi-Dimensional Approach",
-        body: "From feeding the sick to educating children, empowering women, supporting the elderly, and planting trees — we address multiple dimensions of human and environmental welfare together, for deeper and more lasting impact.",
+        body: "From feeding the sick to educating children, empowering women, supporting the elderly, and planting trees  we address multiple dimensions of human and environmental welfare together, for deeper and more lasting impact.",
       },
       {
         title: "CSR Partnership & Tax Benefits",
@@ -78,11 +80,11 @@ export const siteContent = {
       },
       {
         title: "Community-Centred & Inclusive",
-        body: "All our programs are designed with and for the communities we serve. We listen first, act together, and ensure that every individual — regardless of background — receives dignity, care, and opportunity.",
+        body: "All our programs are designed with and for the communities we serve. We listen first, act together, and ensure that every individual  regardless of background  receives dignity, care, and opportunity.",
       },
       {
         title: "Sustainable & Long-Term Programs",
-        body: "We do not just provide relief — we build capacity. Our programs are designed for sustainability, so communities can continue thriving even after our direct intervention has concluded. Change that lasts.",
+        body: "We do not just provide relief  we build capacity. Our programs are designed for sustainability, so communities can continue thriving even after our direct intervention has concluded. Change that lasts.",
       },
     ],
     impactStats: [
@@ -120,13 +122,13 @@ export const siteContent = {
     ],
   },
 
-  /** Six service areas — copy aligned with Aanand Dhara Trust content document. */
+  /** Six service areas  copy aligned with Aanand Dhara Trust content document. */
   services: [
     {
       id: "child-education",
       title: "Child Education",
       description:
-        "Aanand Dhara Charitable Trust believes that education is the most powerful tool for breaking the cycle of poverty. We support underprivileged children with access to quality schooling, learning materials, tuition assistance, and skill-building workshops. Our programs focus on building strong foundations in literacy, numeracy, and life skills so that every child — regardless of economic background — can grow up to realise their full potential.",
+        "Aanand Dhara Charitable Trust believes that education is the most powerful tool for breaking the cycle of poverty. We support underprivileged children with access to quality schooling, learning materials, tuition assistance, and skill-building workshops. Our programs focus on building strong foundations in literacy, numeracy, and life skills so that every child  regardless of economic background  can grow up to realise their full potential.",
       bullets: [
         "Free books, stationery and school supplies for children in need.",
         "After-school tuition support and community learning centres.",
@@ -145,7 +147,7 @@ export const siteContent = {
       id: "hospital-meals",
       title: "Hospital Meal Program",
       description:
-        "Illness is already a heavy burden — hunger should never add to it. Our Hospital Meal Program provides nutritious, hygienic, and freshly prepared meals to patients and their accompanying family members at hospitals. We recognise that caregivers often go without food while attending to their loved ones. A warm, nourishing meal is more than food — it is a message that someone cares.",
+        "Illness is already a heavy burden  hunger should never add to it. Our Hospital Meal Program provides nutritious, hygienic, and freshly prepared meals to patients and their accompanying family members at hospitals. We recognise that caregivers often go without food while attending to their loved ones. A warm, nourishing meal is more than food  it is a message that someone cares.",
       bullets: [
         "Daily distribution of healthy, freshly prepared meals to patients.",
         "Nutritious food packages for family members accompanying patients.",
@@ -164,7 +166,7 @@ export const siteContent = {
       id: "women-empowerment",
       title: "Women Empowerment",
       description:
-        "At Aanand Dhara, we believe that empowering a woman empowers an entire community. Our women empowerment programs provide vocational training, skill development workshops, financial literacy education, and self-help group support. We work to ensure that women — especially from rural and low-income backgrounds — have the tools, confidence, and support networks to lead independent, dignified lives.",
+        "At Aanand Dhara, we believe that empowering a woman empowers an entire community. Our women empowerment programs provide vocational training, skill development workshops, financial literacy education, and self-help group support. We work to ensure that women  especially from rural and low-income backgrounds  have the tools, confidence, and support networks to lead independent, dignified lives.",
       bullets: [
         "Vocational training in tailoring, handicrafts and digital skills.",
         "Self-help group formation and micro-finance assistance.",
@@ -239,7 +241,7 @@ export const siteContent = {
     },
   ],
 
-  /** Gallery — photos from Downloads/selected; local files in public/images/gallery/. */
+  /** Gallery  photos from Downloads/selected; local files in public/images/gallery/. */
   gallery: [
     {
       id: "1",
@@ -248,7 +250,7 @@ export const siteContent = {
       alt: "Hospital ward visit with nutritional supplements for a mother and child",
       caption: "Beside the bed, with care",
       description:
-        "Supporting a patient and family in the hospital with nutritional supplements — small comforts that help recovery feel less alone.",
+        "Supporting a patient and family in the hospital with nutritional supplements  small comforts that help recovery feel less alone.",
     },
     {
       id: "2",
@@ -266,7 +268,7 @@ export const siteContent = {
       alt: "Elderly patient in hospital bed with visitors bringing supplement boxes",
       caption: "With families at difficult times",
       description:
-        "Standing with an elderly patient and loved ones — supplements and solidarity during a long stay in care.",
+        "Standing with an elderly patient and loved ones  supplements and solidarity during a long stay in care.",
     },
     {
       id: "4",
@@ -275,7 +277,7 @@ export const siteContent = {
       alt: "Volunteer giving medicine boxes to a young patient with IV line",
       caption: "Support for patients on treatment",
       description:
-        "Reaching patients who are on drips and daily medication — every box is one less burden on the ward.",
+        "Reaching patients who are on drips and daily medication  every box is one less burden on the ward.",
     },
     {
       id: "5",
@@ -284,16 +286,16 @@ export const siteContent = {
       alt: "Stacks of health supplement cartons with Aanand Dhara Charitable Trust banner",
       caption: "Stocked for the next round of giving",
       description:
-        "Preparing cartons of wellness supplements under the trust banner — ready to move from the storeroom to those who need them.",
+        "Preparing cartons of wellness supplements under the trust banner  ready to move from the storeroom to those who need them.",
     },
     {
       id: "6",
       localImage: "/images/gallery/6.jpg",
       src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80",
       alt: "Volunteer with supplement boxes in front of trust registration banner",
-      caption: "Ahmedabad — our home base",
+      caption: "Ahmedabad  our home base",
       description:
-        "Registered trust activity in Chandlodia and surrounding areas — accountable, local, and people-first.",
+        "Registered trust activity in Chandlodia and surrounding areas  accountable, local, and people-first.",
     },
     {
       id: "7",
@@ -302,7 +304,7 @@ export const siteContent = {
       alt: "Food staples handed over in a basin at a charity handover",
       caption: "Food essentials for a family",
       description:
-        "A full basin of groceries — rice, oil, and staples — handed over so a household can cook with dignity.",
+        "A full basin of groceries  rice, oil, and staples  handed over so a household can cook with dignity.",
     },
     {
       id: "8",
@@ -311,7 +313,7 @@ export const siteContent = {
       alt: "Ration kit of flour, oil, pulses, and vegetables in front of trust banner",
       caption: "A ration kit, ready to go",
       description:
-        "Flour, oil, pulses, onions, and potatoes lined up for families — one kit can steady a week at home.",
+        "Flour, oil, pulses, onions, and potatoes lined up for families  one kit can steady a week at home.",
     },
     {
       id: "9",
@@ -320,7 +322,7 @@ export const siteContent = {
       alt: "Volunteer handing snack packets to schoolchildren on the pavement",
       caption: "Snacks for schoolchildren",
       description:
-        "A quick smile on the sidewalk — snack packets for children after school or on the way home.",
+        "A quick smile on the sidewalk  snack packets for children after school or on the way home.",
     },
     {
       id: "10",
@@ -329,7 +331,7 @@ export const siteContent = {
       alt: "Community snack distribution from a cardboard box on the street",
       caption: "Outreach in the neighbourhood",
       description:
-        "Volunteers and neighbours gather around a simple box — small packets, big warmth in the open air.",
+        "Volunteers and neighbours gather around a simple box  small packets, big warmth in the open air.",
     },
     {
       id: "11",
@@ -338,7 +340,7 @@ export const siteContent = {
       alt: "Children in school uniform receiving packets from volunteers",
       caption: "Reaching children where they are",
       description:
-        "School uniforms and bright faces — distributing snacks where families live and study.",
+        "School uniforms and bright faces  distributing snacks where families live and study.",
     },
     {
       id: "12",
@@ -347,7 +349,7 @@ export const siteContent = {
       alt: "Street distribution of food packets to a family with children",
       caption: "Kindness on the street",
       description:
-        "Stopping for a moment on the roadside — snacks shared with children and parents in the community.",
+        "Stopping for a moment on the roadside  snacks shared with children and parents in the community.",
     },
     {
       id: "13",
@@ -356,7 +358,7 @@ export const siteContent = {
       alt: "Trust volunteers handing a meal tray to an elderly woman in front of trust banner",
       caption: "A hot meal, hand to hand",
       description:
-        "Volunteers serve a plated meal to an elder in front of the trust banner — dignity and nutrition together.",
+        "Volunteers serve a plated meal to an elder in front of the trust banner  dignity and nutrition together.",
     },
     {
       id: "14",
@@ -365,7 +367,7 @@ export const siteContent = {
       alt: "Elderly woman eating at a bunk bed in a shared care facility with a volunteer",
       caption: "Care where people stay",
       description:
-        "A quiet moment in a dormitory-style shelter — a warm meal and company for someone who needs both.",
+        "A quiet moment in a dormitory-style shelter  a warm meal and company for someone who needs both.",
     },
     {
       id: "15",
@@ -374,7 +376,7 @@ export const siteContent = {
       alt: "Community hall meal with young people seated at tables and trust banner",
       caption: "Community hall lunch",
       description:
-        "Trust volunteers with youth enjoying a shared meal — simple food, strong community.",
+        "Trust volunteers with youth enjoying a shared meal  simple food, strong community.",
     },
     {
       id: "16",
@@ -383,7 +385,7 @@ export const siteContent = {
       alt: "Volunteers serving vada pav to students at long tables with trust banner",
       caption: "School-age meal service",
       description:
-        "Fresh vada pav and chutney for rows of students — energy for the afternoon and a full hall of thanks.",
+        "Fresh vada pav and chutney for rows of students  energy for the afternoon and a full hall of thanks.",
     },
     {
       id: "17",
@@ -392,7 +394,7 @@ export const siteContent = {
       alt: "Volunteer handing a basin of rice, oil, and staples to a woman in a pink sari",
       caption: "Groceries for the kitchen",
       description:
-        "Oil, rice, and staples in one basin — practical help so a family can cook at home without worry.",
+        "Oil, rice, and staples in one basin  practical help so a family can cook at home without worry.",
     },
     {
       id: "18",
@@ -401,7 +403,7 @@ export const siteContent = {
       alt: "Hospital corridor sign for TBCD wards on the seventh floor",
       caption: "Inside the hospital we serve",
       description:
-        "Wayfinding in a busy public hospital — our teams walk these corridors to reach patients on the wards.",
+        "Wayfinding in a busy public hospital  our teams walk these corridors to reach patients on the wards.",
     },
     {
       id: "19",
@@ -410,7 +412,7 @@ export const siteContent = {
       alt: "Volunteer handing a container to a patient in a hospital bed",
       caption: "Bedside support",
       description:
-        "A small container of food or supplement — a direct handoff so rest and recovery come first.",
+        "A small container of food or supplement  a direct handoff so rest and recovery come first.",
     },
     {
       id: "20",
@@ -419,7 +421,7 @@ export const siteContent = {
       alt: "Volunteer giving packaged items to an elderly man on a hospital bed",
       caption: "For elders in the ward",
       description:
-        "Listening, handing over essentials, and staying a minute longer — care that feels human.",
+        "Listening, handing over essentials, and staying a minute longer  care that feels human.",
     },
     {
       id: "21",
@@ -428,7 +430,7 @@ export const siteContent = {
       alt: "Volunteer with health items beside an elderly woman in a hospital bed",
       caption: "Comfort at the bedside",
       description:
-        "Digestives, supplements, and a smile — small items that say someone is thinking of you.",
+        "Digestives, supplements, and a smile  small items that say someone is thinking of you.",
     },
     {
       id: "22",
@@ -437,13 +439,13 @@ export const siteContent = {
       alt: "Bottled health products on display with Anand Dhara Charitable Trust banner",
       caption: "Ready for distribution",
       description:
-        "Bottled supplements lined up under the trust banner in Ahmedabad — the next batch heading out to those in need.",
+        "Bottled supplements lined up under the trust banner in Ahmedabad  the next batch heading out to those in need.",
     },
   ],
 
   donation: {
     message:
-      "Your donation supports education, hospital meals, women’s empowerment, relief for the needy, social welfare, and climate action — with full transparency.",
+      "Your donation supports education, hospital meals, women’s empowerment, relief for the needy, social welfare, and climate action  with full transparency.",
     instructions:
       "Transfer funds by bank or UPI, or explore CSR partnerships. Every contribution is accounted for with open records and activity reports.",
     bankName: "Example Bank",
@@ -469,7 +471,7 @@ export const siteContent = {
     qrLoadFailed: "QR code image",
   },
 
-  /** Main navigation — same labels used in header and footer quick links. */
+  /** Main navigation  same labels used in header and footer quick links. */
   nav: {
     links: [
       { href: "/", label: "Home" },
@@ -491,14 +493,14 @@ export const siteContent = {
   homePage: {
     impactTitle: "Our Impact",
     impactSubtitle:
-      "Six focused initiatives — lives touched across India — driven by donors, volunteers, and community partners.",
+      "Six focused initiatives  lives touched across India  driven by donors, volunteers, and community partners.",
     galleryTitle: "On the ground in Ahmedabad",
     gallerySubtitle:
-      "Hospital visits, trust-led drives, food kits, community meals, and neighbourhood outreach — real moments from our work.",
+      "Hospital visits, trust-led drives, food kits, community meals, and neighbourhood outreach  real moments from our work.",
     galleryViewAll: "View All",
     finalCtaTitle: "Join Us in Making a Difference",
     finalCtaSubtitle:
-      "Join the movement. Donate · Volunteer · Partner · Spread the word — every act of kindness creates a powerful wave of change.",
+      "Join the movement. Donate · Volunteer · Partner · Spread the word  every act of kindness creates a powerful wave of change.",
     finalCtaDonate: "Donate Now",
     finalCtaContact: "Contact Us",
   },
@@ -506,14 +508,14 @@ export const siteContent = {
   servicesPage: {
     title: "Our Service Areas",
     subtitle:
-      "Six focused initiatives, one shared mission — to serve every person in need with dignity, care, and lasting compassion.",
+      "Six focused initiatives, one shared mission  to serve every person in need with dignity, care, and lasting compassion.",
   },
 
   pages: {
     donate: {
       title: "Donate",
       intro:
-        "Your contribution strengthens child education, hospital meals, women's empowerment, help for the needy, social welfare, and climate action — with accountability you can trust.",
+        "Your contribution strengthens child education, hospital meals, women's empowerment, help for the needy, social welfare, and climate action  with accountability you can trust.",
     },
     contact: {
       title: "Contact Us",
@@ -537,7 +539,7 @@ export const siteContent = {
     gallery: {
       title: "Gallery",
       intro:
-        "Hospital wards, distribution halls, and neighbourhood streets — photos from Aanand Dhara Charitable Trust’s programmes in and around Ahmedabad.",
+        "Hospital wards, distribution halls, and neighbourhood streets  photos from Aanand Dhara Charitable Trust’s programmes in and around Ahmedabad.",
       body:
         "Supplements and medicines for patients, meals and kits for families, trust banners and volunteers with schoolchildren. Tap any image to read more.",
       gridTitle: "Hospitals, halls, and streets",
