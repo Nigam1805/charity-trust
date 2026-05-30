@@ -4,7 +4,8 @@ import { siteContent } from "@/content/siteContent";
 import { TrustWordmark } from "@/components/TrustWordmark";
 
 export function Footer() {
-  const { trustName, tagline, about, contact, donation, nav, footerLabels } = siteContent;
+  const { trustName, tagline, about, contact, donation, legal, nav, footerLabels } = siteContent;
+  const registrationLine = legal.footerRegistration.replace("{registrationNo}", legal.registrationNo);
 
   return (
     <footer className="border-t border-white/10 bg-primary text-primary-foreground">
@@ -61,7 +62,10 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-10 border-t border-white/15 pt-8 text-center text-sm text-primary-foreground/70">
-          &copy; {new Date().getFullYear()} {trustName}. {footerLabels.rightsReserved}
+          <p>{registrationLine}</p>
+          <p className="mt-2">
+            &copy; {new Date().getFullYear()} {trustName}. {footerLabels.rightsReserved}
+          </p>
         </div>
       </div>
     </footer>

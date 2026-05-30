@@ -103,9 +103,10 @@ export const siteContent = {
         id: "1",
         name: "JigneshBhai Patel",
         role: "Founder & Managing Trustee",
-        bio: "Dedicated to reducing hunger in our community. Leads outreach and partnerships with hospitals and schools.",
+        bio: "Dedicated to reducing hunger in our community. Leads outreach and partnerships with Education and Health Care.",
         localImage: "/images/team/1.jpg",
-        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imagePlaceholder:
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
       },
       {
         id: "2",
@@ -113,45 +114,51 @@ export const siteContent = {
         role: "Trustee – Programmes",
         bio: "Oversees meal distribution and volunteer coordination. Ensures nutritious food reaches those who need it most.",
         localImage: "/images/team/2.jpg",
-        imagePlaceholder: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
+        imagePlaceholder:
+          "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
       },
     ],
     /** Volunteers — photos in public/images/volunteers/. Update names as needed. */
     volunteers: [
       {
         id: "1",
-        name: "Volunteer",
+        name: "NarendraBhai Patel",
         localImage: "/images/volunteers/1.jpg",
-        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imagePlaceholder:
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
         imageFocus: "top",
       },
       {
         id: "2",
-        name: "Volunteer",
-        localImage: "/images/volunteers/2.jpg",
-        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
-        imageFocus: "top",
+        name: "Kiran Patel",
+        localImage: "/images/volunteers/5.jpg",
+        imagePlaceholder:
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imageFocus: "upper",
       },
       {
         id: "3",
-        name: "Volunteer",
+        name: "ChaggarBhai Desai",
         localImage: "/images/volunteers/3.jpg",
-        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imagePlaceholder:
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
         imageFocus: "top",
       },
       {
         id: "4",
-        name: "Volunteer",
+        name: "RakeshBhai dalvadi",
         localImage: "/images/volunteers/4.jpg",
-        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imagePlaceholder:
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
         imageFocus: "top",
       },
       {
         id: "5",
-        name: "Kiran Bhai",
-        localImage: "/images/volunteers/5.jpg",
-        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
-        imageFocus: "upper",
+        name: "RasikBhai dalvadi",
+        localImage: "/images/volunteers/2.jpg",
+        imagePlaceholder:
+          "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imageFocus: "top",
       },
     ],
   },
@@ -170,7 +177,8 @@ export const siteContent = {
         "Awareness campaigns to reduce school dropout rates in rural areas.",
         "Educational workshops on hygiene, health, and life skills.",
       ],
-      quote: "Education is the most powerful weapon which you can use to change the world.",
+      quote:
+        "Education is the most powerful weapon which you can use to change the world.",
       quoteAuthor: "Nelson Mandela",
       icon: "GraduationCap",
       localImage: "/images/services/education.jpg",
@@ -189,7 +197,8 @@ export const siteContent = {
         "Partnerships with hospitals, clinics, and healthcare institutions.",
         "Volunteer-driven distribution with warmth and compassion.",
       ],
-      quote: "The best way to find yourself is to lose yourself in the service of others.",
+      quote:
+        "The best way to find yourself is to lose yourself in the service of others.",
       quoteAuthor: "Mahatma Gandhi",
       icon: "UtensilsCrossed",
       localImage: "/images/services/hospital.jpg",
@@ -227,7 +236,8 @@ export const siteContent = {
         "Emergency relief and support during floods, droughts and disasters.",
         "Street children care and shelter support initiatives.",
       ],
-      quote: "We make a living by what we get, but we make a life by what we give.",
+      quote:
+        "We make a living by what we get, but we make a life by what we give.",
       quoteAuthor: "Winston Churchill",
       icon: "HandHeart",
       localImage: "/images/services/help-needy.jpg",
@@ -508,6 +518,22 @@ export const siteContent = {
     qrLoadFailed: "QR code image",
   },
 
+  /** Trust registration and tax identifiers — footer + Donate page. */
+  legal: {
+    registrationNo: "E-24805",
+    pan: "AAMTA3778K",
+    urn80G: "AAMTA3778KE20251 - 80G",
+    labels: {
+      registrationNo: "Registration No.",
+      pan: "PAN",
+      urn80G: "80G URN",
+    },
+    donationHeading: "Trust Registration & Tax Details",
+    donationNote:
+      "Donations may be eligible for tax deduction under Section 80G of the Income Tax Act, subject to applicable provisions.",
+    footerRegistration: "Regd. No. {registrationNo}",
+  },
+
   /** Main navigation  same labels used in header and footer quick links. */
   nav: {
     links: [
@@ -556,7 +582,8 @@ export const siteContent = {
     },
     contact: {
       title: "Contact Us",
-      intro: "Get in touch for inquiries, partnerships, or to learn how you can help.",
+      intro:
+        "Get in touch for inquiries, partnerships, or to learn how you can help.",
       infoHeading: "Contact Information",
     },
     about: {
@@ -580,8 +607,7 @@ export const siteContent = {
       title: "Gallery",
       intro:
         "Hospital wards, distribution halls, and neighbourhood streets  photos from Aanand Dhara Charitable Trust’s programmes in and around Ahmedabad.",
-      body:
-        "Supplements and medicines for patients, meals and kits for families, trust banners and volunteers with schoolchildren. Tap any image to read more.",
+      body: "Supplements and medicines for patients, meals and kits for families, trust banners and volunteers with schoolchildren. Tap any image to read more.",
       gridTitle: "Hospitals, halls, and streets",
       galleryCountLine: "{count} photos from the field.",
       imagePlaceholder: "Image",
@@ -618,7 +644,7 @@ export const siteContent = {
   contact: {
     address:
       "6, Tulsinagar shoping center, Nr. Chitrakut socety, Chandlodiya, Ahmedabad, Gujarat 382481, India",
-    phone: "+91 9886115052",
+    phone: "+91 9586115052",
     email: "aananddharatrust@gmail.com",
     mapLocation: "Chandlodiya, Ahmedabad, Gujarat 382481, India",
     mapLink:

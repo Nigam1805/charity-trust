@@ -99,7 +99,7 @@ function MethodCard({
 }
 
 export function DonationSection() {
-  const { donation } = siteContent;
+  const { donation, legal } = siteContent;
   const L = donation.bankFieldLabels;
   const [upiCopied, setUpiCopied] = useState(false);
 
@@ -211,6 +211,39 @@ export function DonationSection() {
             </div>
           </MethodCard>
         </div>
+
+        <motion.div
+          className="mx-auto mt-8 max-w-5xl rounded-xl border border-border/80 bg-background p-5 shadow-sm sm:p-6"
+          initial={{ opacity: 0, y: 12 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.4, delay: 0.15 }}
+        >
+          <h3 className="font-heading text-base font-semibold text-foreground sm:text-lg">
+            {legal.donationHeading}
+          </h3>
+          <dl className="mt-4 grid gap-4 sm:grid-cols-3">
+            <div className="rounded-lg bg-muted/50 px-4 py-3">
+              <dt className="text-xs font-semibold uppercase tracking-wide text-text-muted">
+                {legal.labels.registrationNo}
+              </dt>
+              <dd className="mt-1 font-mono text-sm font-medium text-foreground">{legal.registrationNo}</dd>
+            </div>
+            <div className="rounded-lg bg-muted/50 px-4 py-3">
+              <dt className="text-xs font-semibold uppercase tracking-wide text-text-muted">
+                {legal.labels.pan}
+              </dt>
+              <dd className="mt-1 font-mono text-sm font-medium text-foreground">{legal.pan}</dd>
+            </div>
+            <div className="rounded-lg bg-muted/50 px-4 py-3">
+              <dt className="text-xs font-semibold uppercase tracking-wide text-text-muted">
+                {legal.labels.urn80G}
+              </dt>
+              <dd className="mt-1 break-all font-mono text-sm font-medium text-foreground">{legal.urn80G}</dd>
+            </div>
+          </dl>
+          <p className="mt-4 text-xs leading-relaxed text-text-secondary sm:text-sm">{legal.donationNote}</p>
+        </motion.div>
 
         <motion.p
           className="mx-auto mt-10 max-w-xl text-center text-sm leading-relaxed text-text-secondary md:text-base"
