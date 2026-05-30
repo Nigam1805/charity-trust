@@ -23,8 +23,12 @@ export const siteContent = {
   },
 
   about: {
+    /** Portrait shown on About — beside “Inspired by Love, Guided by Humanity”. */
+    inspirationImage: "/images/about/parents.png",
+    inspirationImageAlt:
+      "Our beloved parents, in whose loving memory and inspiration Aanand Dhara Charitable Trust was established",
     intro:
-      "Aanand Dhara Charitable Trust is a registered non-profit organisation dedicated to uplifting underserved communities across India. The name Aanand Dhara  meaning ‘Stream of Joy’  reflects our core belief: happiness and well-being naturally flow when communities come together to serve those most in need. From nourishing patients in hospitals to educating children, empowering women, driving social welfare, and protecting our environment  we work across six service areas to create meaningful, lasting change at the grassroots level. Every initiative is rooted in dignity, compassion, and full transparency. We are driven by the conviction that every human being deserves dignity, opportunity, and care  regardless of economic background. With the generous support of donors, volunteers, and community partners, Aanand Dhara Charitable Trust continues to be a lifeline for thousands of families every year.",
+      "This trust has been established in loving memory and inspiration of our beloved parents, whose life was a true example of kindness, compassion, and selfless service.\n\nThey always believed in helping needy people and supporting those who were facing difficult times. Their generous nature and strong values inspired us to continue their noble thoughts through meaningful social work.\n\nWith this trust, we aim to carry forward their legacy by serving society with honesty, care, and dedication. Every step we take is a tribute to their values and a commitment to making a positive difference in people’s lives.",
     coreValues: [
       {
         title: "Compassion First",
@@ -93,11 +97,11 @@ export const siteContent = {
       { label: "Donation Driven", value: "100%" },
       { label: "Compassion", value: "∞" },
     ],
-    /** Key people – trustees, founders, or team. Use localImage (e.g. /images/team/1.jpg) or leave empty for placeholder. */
+    /** Trustees — photos in public/images/team/. */
     people: [
       {
         id: "1",
-        name: "Ramesh Patel",
+        name: "JigneshBhai Patel",
         role: "Founder & Managing Trustee",
         bio: "Dedicated to reducing hunger in our community. Leads outreach and partnerships with hospitals and schools.",
         localImage: "/images/team/1.jpg",
@@ -105,19 +109,49 @@ export const siteContent = {
       },
       {
         id: "2",
-        name: "Priya Sharma",
+        name: "JuliBen Patel",
         role: "Trustee – Programmes",
         bio: "Oversees meal distribution and volunteer coordination. Ensures nutritious food reaches those who need it most.",
         localImage: "/images/team/2.jpg",
         imagePlaceholder: "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=400&q=80",
       },
+    ],
+    /** Volunteers — photos in public/images/volunteers/. Update names as needed. */
+    volunteers: [
+      {
+        id: "1",
+        name: "Volunteer",
+        localImage: "/images/volunteers/1.jpg",
+        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imageFocus: "top",
+      },
+      {
+        id: "2",
+        name: "Volunteer",
+        localImage: "/images/volunteers/2.jpg",
+        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imageFocus: "top",
+      },
       {
         id: "3",
-        name: "Vikram Mehta",
-        role: "Trustee – Operations",
-        bio: "Manages logistics, donor relations, and day-to-day operations so we can scale our impact.",
-        localImage: "/images/team/3.jpg",
-        imagePlaceholder: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=400&q=80",
+        name: "Volunteer",
+        localImage: "/images/volunteers/3.jpg",
+        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imageFocus: "top",
+      },
+      {
+        id: "4",
+        name: "Volunteer",
+        localImage: "/images/volunteers/4.jpg",
+        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imageFocus: "top",
+      },
+      {
+        id: "5",
+        name: "Kiran Bhai",
+        localImage: "/images/volunteers/5.jpg",
+        imagePlaceholder: "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
+        imageFocus: "upper",
       },
     ],
   },
@@ -448,10 +482,12 @@ export const siteContent = {
       "Your donation supports education, hospital meals, women’s empowerment, relief for the needy, social welfare, and climate action  with full transparency.",
     instructions:
       "Transfer funds by bank or UPI, or explore CSR partnerships. Every contribution is accounted for with open records and activity reports.",
-    bankName: "Example Bank",
-    accountName: "Aanand Dhara Charitable Trust",
-    accountNumber: "1234567890123456",
-    ifsc: "EXMP0001234",
+    bankName: "HDFC Bank",
+    accountName: "AANANDDHARA CHARITABLE TRUST",
+    accountNumber: "50200119409722",
+    ifsc: "HDFC0001337",
+    branch:
+      "HDFC Bank Ltd, Shubham Complex, KK Nagar Road, Ghatlodiya, Ahmedabad - 380061, Gujarat",
     upiId: "aananddharacharitabl.82206907@hdfcbank",
     qrCodeImage: "/qr-donate.png",
     sectionTitle: "Support Our Cause",
@@ -462,9 +498,10 @@ export const siteContent = {
       accountName: "Account Name",
       accountNumber: "Account Number",
       ifsc: "IFSC Code",
+      branch: "Branch",
     },
-    upiIdLabel: "UPI ID:",
-    upiSideTextBeforeId: "Scan with any UPI app to donate. Or use UPI ID:",
+    upiIdLabel: "UPI ID",
+    upiSideTextBeforeId: "Scan with any UPI app to donate.",
     thankYouFooter:
       "Thank you for your generosity. Together we can ensure every child learns, every family is nourished, and every community thrives.",
     qrAlt: "UPI QR Code for donations",
@@ -523,9 +560,12 @@ export const siteContent = {
       infoHeading: "Contact Information",
     },
     about: {
-      title: "Who We Are",
+      title: "Inspired by Love, Guided by Humanity",
       peopleTitle: "Our People",
       peopleSubtitleTemplate: "The trustees and team behind {trustName}.",
+      volunteersTitle: "Our Volunteers",
+      volunteersSubtitle:
+        "Dedicated volunteers who give their time and heart to meal distribution, outreach, and community support.",
       coreValuesTitle: "Our Core Values",
       missionTitle: "Our Mission",
       visionTitle: "Our Vision",
@@ -556,6 +596,7 @@ export const siteContent = {
     title: "Find Us",
     loading: "Loading map…",
     iframeTitle: "Trust location on Google Maps",
+    directionsLabel: "Navigate to Chandlodiya",
   },
 
   contactForm: {
@@ -575,11 +616,13 @@ export const siteContent = {
   },
 
   contact: {
-    address: "123 Charity Lane, Ahmedabad, Gujarat 380001, India",
-    phone: "+91 9737779805",
-    email: "raminigam2@gmail.com",
-    mapLocation: "Ahmedabad,Gujarat",
-    mapLink: "https://maps.google.com/?q=Ahmedabad,Gujarat",
+    address:
+      "6, Tulsinagar shoping center, Nr. Chitrakut socety, Chandlodiya, Ahmedabad, Gujarat 382481, India",
+    phone: "+91 9886115052",
+    email: "aananddharatrust@gmail.com",
+    mapLocation: "Chandlodiya, Ahmedabad, Gujarat 382481, India",
+    mapLink:
+      "https://www.google.com/maps/dir/?api=1&destination=Chandlodiya,+Ahmedabad,+Gujarat+382481,+India",
   },
 } as const;
 

@@ -4,7 +4,10 @@ import { siteContent } from "@/content/siteContent";
 export function MapSection() {
   const { contact, mapSection } = siteContent;
   const [mapLoaded, setMapLoaded] = useState(false);
-  const embedUrl = `https://www.google.com/maps?q=${encodeURIComponent(contact.mapLocation)}&output=embed`;
+  const locationQuery = contact.mapLocation || contact.address;
+  const embedUrl = `https://www.google.com/maps?q=${encodeURIComponent(locationQuery)}&output=embed`;
+  const mapLink =
+    contact.mapLink || `https://maps.google.com/?q=${encodeURIComponent(locationQuery)}`;
 
   useEffect(() => {
     const fallback = setTimeout(() => setMapLoaded(true), 5000);
@@ -42,12 +45,12 @@ export function MapSection() {
           />
         </div>
         <a
-          href={contact.mapLink}
+          href={mapLink}
           target="_blank"
           rel="noopener noreferrer"
           className="mt-4 inline-block rounded-lg bg-primary px-5 py-2.5 text-base font-medium text-primary-foreground shadow-card transition-all hover:bg-primary-hover"
         >
-          Open Location in Google Maps
+          {mapSection.directionsLabel}
         </a>
       </div>
     </section>
