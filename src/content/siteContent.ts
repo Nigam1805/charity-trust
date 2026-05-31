@@ -122,7 +122,7 @@ export const siteContent = {
     volunteers: [
       {
         id: "1",
-        name: "NarendraBhai Patel",
+        name: "NarendraBhai Patel (Event Coordinator)",
         localImage: "/images/volunteers/1.jpg",
         imagePlaceholder:
           "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
@@ -130,7 +130,7 @@ export const siteContent = {
       },
       {
         id: "2",
-        name: "Kiran Patel",
+        name: "Kiran Patel (Administrative support volunteer)",
         localImage: "/images/volunteers/5.jpg",
         imagePlaceholder:
           "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
@@ -138,7 +138,7 @@ export const siteContent = {
       },
       {
         id: "3",
-        name: "ChaggarBhai Desai",
+        name: "ChhaganBhai Desai (Volunteer)",
         localImage: "/images/volunteers/3.jpg",
         imagePlaceholder:
           "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
@@ -146,7 +146,7 @@ export const siteContent = {
       },
       {
         id: "4",
-        name: "RakeshBhai dalvadi",
+        name: "RakeshBhai dalvadi (Volunteer)",
         localImage: "/images/volunteers/4.jpg",
         imagePlaceholder:
           "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
@@ -154,7 +154,7 @@ export const siteContent = {
       },
       {
         id: "5",
-        name: "RasikBhai dalvadi",
+        name: "RashikBhai dalvadi (Volunteer)",
         localImage: "/images/volunteers/2.jpg",
         imagePlaceholder:
           "https://images.unsplash.com/photo-1560250097-0b93528c311a?w=400&q=80",
@@ -643,7 +643,7 @@ export const siteContent = {
 
   contact: {
     address:
-      "6, Tulsinagar shoping center, Nr. Chitrakut socety, Chandlodiya, Ahmedabad, Gujarat 382481, India",
+      "6, Tulsinagar shoping center, Nr. Chitrakut Society, Chandlodiya, Ahmedabad, Gujarat 382481, India",
     phone: "+91 9586115052",
     email: "aananddharatrust@gmail.com",
     mapLocation: "Chandlodiya, Ahmedabad, Gujarat 382481, India",
