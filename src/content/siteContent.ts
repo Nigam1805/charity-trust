@@ -333,15 +333,6 @@ export const siteContent = {
         "Preparing cartons of wellness supplements under the trust banner  ready to move from the storeroom to those who need them.",
     },
     {
-      id: "6",
-      localImage: "/images/gallery/6.jpg",
-      src: "https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=600&q=80",
-      alt: "Volunteer with supplement boxes in front of trust registration banner",
-      caption: "Ahmedabad  our home base",
-      description:
-        "Registered trust activity in Chandlodia and surrounding areas  accountable, local, and people-first.",
-    },
-    {
       id: "7",
       localImage: "/images/gallery/7.jpg",
       src: "https://images.unsplash.com/photo-1606787366850-de6330128bfc?w=600&q=80",
@@ -403,15 +394,6 @@ export const siteContent = {
       caption: "A hot meal, hand to hand",
       description:
         "Volunteers serve a plated meal to an elder in front of the trust banner  dignity and nutrition together.",
-    },
-    {
-      id: "14",
-      localImage: "/images/gallery/14.jpg",
-      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
-      alt: "Elderly woman eating at a bunk bed in a shared care facility with a volunteer",
-      caption: "Care where people stay",
-      description:
-        "A quiet moment in a dormitory-style shelter  a warm meal and company for someone who needs both.",
     },
     {
       id: "15",
@@ -484,6 +466,69 @@ export const siteContent = {
       caption: "Ready for distribution",
       description:
         "Bottled supplements lined up under the trust banner in Ahmedabad  the next batch heading out to those in need.",
+    },
+    {
+      id: "23",
+      localImage: "/images/gallery/23.png",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Trust volunteer handing support materials to a woman patient in a hospital ward",
+      caption: "Support at the bedside",
+      description:
+        "A trust volunteer reaches a woman resting on a hospital bed  practical help and a human presence when the ward feels overwhelming.",
+    },
+    {
+      id: "24",
+      localImage: "/images/gallery/24.png",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Volunteer handing a meal container to a mother with her newborn in a hospital bed",
+      caption: "Meals for new mothers",
+      description:
+        "A warm meal handed to a mother holding her newborn  nourishment for recovery and the long days beside the cot.",
+    },
+    {
+      id: "25",
+      localImage: "/images/gallery/25.png",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Volunteer attending a patient while family members sit on nearby hospital beds",
+      caption: "Care with family close by",
+      description:
+        "Bedside support in a shared ward  a volunteer tends to a patient while loved ones wait nearby on neighbouring beds.",
+    },
+    {
+      id: "26",
+      localImage: "/images/gallery/26.png",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Family standing beside a young woman patient lying on a hospital bed",
+      caption: "Families not alone",
+      description:
+        "A young woman rests on a ward bed while family stands with her  trust volunteers walk these corridors every week.",
+    },
+    {
+      id: "27",
+      localImage: "/images/gallery/27.png",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Hospital ward visit with a mother, newborn baby, and volunteer support",
+      caption: "Ward rounds with compassion",
+      description:
+        "In a bright hospital room, volunteers and staff reach mothers and newborns  small acts of care across busy wards.",
+    },
+    {
+      id: "29",
+      localImage: "/images/gallery/29.png",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Volunteer handing essentials to a woman beside an infant on a hospital bed",
+      caption: "Essentials in the ward",
+      description:
+        "Support delivered beside the cot  volunteers bring food and essentials to patients and families in public hospitals.",
+    },
+    {
+      id: "32",
+      localImage: "/images/gallery/32.png",
+      src: "https://images.unsplash.com/photo-1579684385127-1ef15d508118?w=600&q=80",
+      alt: "Trust volunteer sharing a meal with children including a visually impaired boy at a community dining hall",
+      caption: "Care for every child",
+      description:
+        "A trust volunteer sits with children at a shared meal  including a visually impaired boy  offering food, company, and the message that no child is forgotten.",
     },
   ],
 
