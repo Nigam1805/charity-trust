@@ -1,6 +1,7 @@
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { siteContent } from "@/content/siteContent";
+import { Button } from "@/components/ui/button";
 import {
   Sheet,
   SheetTrigger,
@@ -40,17 +41,22 @@ export function Navbar() {
           {navLinks.map(({ href, label }) => {
             const isActive = pathname === href;
             const isDonate = href === "/donate";
+            if (isDonate) {
+              return (
+                <Button key={href} asChild variant="default" size="sm" className="ml-2 shadow-md">
+                  <Link to={href}>{label}</Link>
+                </Button>
+              );
+            }
             return (
               <Link
                 key={href}
                 to={href}
                 className={cn(
                   "rounded-lg px-4 py-2 text-sm font-medium transition-colors",
-                  isDonate
-                    ? "ml-2 bg-accent text-accent-foreground hover:bg-accent-hover"
-                    : isActive
-                      ? "bg-primary-foreground/20 text-primary-foreground"
-                      : "text-primary-foreground/90 hover:bg-primary-foreground/10 hover:text-primary-foreground"
+                  isActive
+                    ? "bg-primary-foreground/20 text-primary-foreground"
+                    : "text-primary-foreground/90 hover:bg-primary-foreground/10 hover:text-primary-foreground"
                 )}
               >
                 {label}
@@ -92,17 +98,24 @@ export function Navbar() {
               {navLinks.map(({ href, label }) => {
                 const isActive = pathname === href;
                 const isDonate = href === "/donate";
+                if (isDonate) {
+                  return (
+                    <SheetClose asChild key={href}>
+                      <Button asChild variant="default" className="mt-3 w-full shadow-md">
+                        <Link to={href}>{label}</Link>
+                      </Button>
+                    </SheetClose>
+                  );
+                }
                 return (
                   <SheetClose asChild key={href}>
                     <Link
                       to={href}
                       className={cn(
                         "block rounded-lg px-4 py-3 text-base font-medium transition-colors",
-                        isDonate
-                          ? "mt-2 bg-accent text-accent-foreground hover:bg-accent-hover hover:scale-105 transition-all"
-                          : isActive
-                            ? "bg-primary-light text-primary"
-                            : "text-secondary-foreground hover:bg-primary-light/50"
+                        isActive
+                          ? "bg-primary-light text-primary"
+                          : "text-secondary-foreground hover:bg-primary-light/50"
                       )}
                     >
                       {label}

@@ -26,9 +26,9 @@ export const siteContent = {
     /** Portrait shown on About — beside “Inspired by Love, Guided by Humanity”. */
     inspirationImage: "/images/about/parents.png",
     inspirationImageAlt:
-      "Our beloved parents, in whose loving memory and inspiration Aanand Dhara Charitable Trust was established",
+      "Late Ramila Ben Patel and Late Dashrath bhai Patel, in whose loving memory and inspiration Aanand Dhara Charitable Trust was established",
     intro:
-      "This trust has been established in loving memory and inspiration of our beloved parents, whose life was a true example of kindness, compassion, and selfless service.\n\nThey always believed in helping needy people and supporting those who were facing difficult times. Their generous nature and strong values inspired us to continue their noble thoughts through meaningful social work.\n\nWith this trust, we aim to carry forward their legacy by serving society with honesty, care, and dedication. Every step we take is a tribute to their values and a commitment to making a positive difference in people’s lives.",
+      "This trust has been established in loving memory and inspiration of our beloved parents, Ramila Ben Patel and Late Dashrath bhai Patel, whose lives were true examples of kindness, compassion, and selfless service.\n\nThey always believed in helping needy people and supporting those who were facing difficult times. Their generous nature, humble values, and caring spirit inspired us to continue their noble thoughts through meaningful social work.\n\nWith this trust, we aim to carry forward the legacy of Late Ramila Ben and Late Dashrath bhai by serving society with honesty, care, and dedication. Every step we take is a tribute to their values and a commitment to making a positive difference in people’s lives.",
     coreValues: [
       {
         title: "Compassion First",
@@ -585,7 +585,7 @@ export const siteContent = {
       { href: "/", label: "Home" },
       { href: "/about", label: "About" },
       { href: "/gallery", label: "Gallery" },
-      { href: "/donate", label: "Donate" },
+      { href: "/donate", label: "Donate Now" },
       { href: "/contact", label: "Contact" },
     ] as const,
   },

@@ -102,11 +102,11 @@ export function Home() {
           <p className="mx-auto mt-4 max-w-2xl text-lg text-primary-foreground/90">
             {homePage.finalCtaSubtitle}
           </p>
-          <div className="mt-8 flex flex-wrap justify-center gap-4">
-            <Button asChild variant="default" size="lg">
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-3 sm:gap-4">
+            <Button asChild variant="default" size="lg" className="min-w-[9.5rem] shadow-lg">
               <Link to="/donate">{homePage.finalCtaDonate}</Link>
             </Button>
-            <Button asChild variant="outline" size="lg" className="border-primary-foreground text-primary-foreground hover:bg-primary-foreground/20">
+            <Button asChild variant="outlineOnDark" size="lg" className="min-w-[9.5rem]">
               <Link to="/contact">{homePage.finalCtaContact}</Link>
             </Button>
           </div>

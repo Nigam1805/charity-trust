@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import { Mail, Phone, MapPin } from "lucide-react";
 import { siteContent } from "@/content/siteContent";
 import { TrustWordmark } from "@/components/TrustWordmark";
+import { Button } from "@/components/ui/button";
 
 export function Footer() {
   const { trustName, tagline, about, contact, donation, legal, nav, footerLabels } = siteContent;
@@ -53,12 +54,9 @@ export function Footer() {
           <div>
             <h3 className="font-heading text-lg font-semibold">{footerLabels.supportUs}</h3>
             <p className="mt-2 text-sm text-primary-foreground/80">{donation.message}</p>
-            <Link
-              to="/donate"
-              className="mt-4 inline-block rounded-xl bg-brand-gradient px-4 py-2.5 text-sm font-semibold text-white shadow-md transition-all hover:brightness-110 hover:shadow-lg"
-            >
-              {footerLabels.donateNow}
-            </Link>
+            <Button asChild variant="default" size="default" className="mt-4 shadow-md">
+              <Link to="/donate">{footerLabels.donateNow}</Link>
+            </Button>
           </div>
         </div>
         <div className="mt-10 border-t border-white/15 pt-8 text-center text-sm text-primary-foreground/70">

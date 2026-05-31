@@ -125,19 +125,14 @@ export function Hero() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: motionDur(0.48), delay: motionDelay(0.22), ease: [0.25, 0.4, 0.25, 1] }}
         >
-          <Button asChild variant="default" size="lg" className="min-w-[140px] shadow-lg sm:min-w-[160px]">
+          <Button asChild variant="default" size="lg" className="min-w-[9.5rem] shadow-lg sm:min-w-[10rem]">
             <Link to="/donate">{ctaPrimary}</Link>
           </Button>
           <Button
             asChild
-            variant="outline"
+            variant={lightHeroArt ? "soft" : "outlineOnDark"}
             size="lg"
-            className={cn(
-              "min-w-[140px] sm:min-w-[160px]",
-              lightHeroArt
-                ? "border border-primary/35 bg-white/25 text-primary shadow-sm backdrop-blur-[2px] hover:border-primary/60 hover:bg-white/45 hover:text-primary"
-                : "border-2 border-white/90 bg-white/5 text-white backdrop-blur-sm hover:bg-white/20 hover:text-white"
-            )}
+            className="min-w-[9.5rem] sm:min-w-[10rem]"
           >
             <Link to="/about">{ctaSecondary}</Link>
           </Button>
